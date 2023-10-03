@@ -8,14 +8,18 @@
 import SwiftUI
 
 struct TextForFlower: View {
+    
+    var textTitle: String
+    var textBody: String
+    
     var body: some View {
         VStack(spacing: 20){
-            Text("Доставьте радость легко и просто")
+            Text(textTitle)
                 .font(Font.system(size: 28, weight: .semibold))
                 .multilineTextAlignment(.center)
                 .padding(.horizontal, 27)
             
-            Text("Приветствуем вас в цветочном мире, где каждый букет – маленький шедевр, способный подарить непередаваемые эмоции.")
+            Text(textBody)
                 .font(Font.system(size: 16, weight: .light))
                 .foregroundColor(Color(red: 51 / 255, green: 51 / 255, blue: 51 / 255, opacity: 1))
                 .multilineTextAlignment(.center)
@@ -24,8 +28,8 @@ struct TextForFlower: View {
     }
 }
 
-struct TextForFlower_Previews: PreviewProvider {
-    static var previews: some View {
-        TextForFlower()
-    }
-}
+//struct TextForFlower_Previews: PreviewProvider {
+//    static var previews: some View {
+//        TextForFlower()
+//    }
+//}

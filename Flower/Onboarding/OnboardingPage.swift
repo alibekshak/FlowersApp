@@ -8,13 +8,20 @@
 import SwiftUI
 
 struct OnboardingPage: View {
+    
+    var imageFlower: String
+    var textTitle: String
+    var textBody: String
+    var RGBColor: Color
+    
     var body: some View {
         ZStack{
-            Color(red: 0.98, green: 0.77, blue: 0.77)
+            RGBColor
+            
             VStack{
                 Spacer(minLength: 85)
                 
-                ImageForFlower()
+                ImageForFlower(imageFlower: imageFlower)
                 
                 Spacer()
                 
@@ -22,7 +29,7 @@ struct OnboardingPage: View {
                 
                 Spacer()
                 
-                TextForFlower()
+                TextForFlower(textTitle: textTitle, textBody: textBody)
                 
                 Spacer()
                 
@@ -38,6 +45,6 @@ struct OnboardingPage: View {
 
 struct OnboardingPage_Previews: PreviewProvider {
     static var previews: some View {
-        OnboardingPage()
+        OnboardingPage(imageFlower: Auxiliary.imagesForFlower().imageFlower2, textTitle: Auxiliary.textForFlower().textTitle2, textBody: Auxiliary.textForFlower().textBody2, RGBColor: Auxiliary.RGBColor().color2)
     }
 }
