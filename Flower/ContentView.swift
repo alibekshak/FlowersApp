@@ -1,21 +1,21 @@
-//
-//  ContentView.swift
-//  Flower
-//
-//  Created by Apple on 03.10.2023.
-//
-
 import SwiftUI
 
 struct ContentView: View {
+    
+    @State private var currentTab = 0
+    
     var body: some View {
-        VStack {
-            Image(systemName: "globe")
-                .imageScale(.large)
-                .foregroundColor(.accentColor)
-            Text("Hello, world!")
-        }
-        .padding()
+        TabView(selection: $currentTab, content: {
+            OnboardingPage()
+                .tag(0)
+            OnboardingPage()
+                .tag(1)
+            OnboardingPage()
+                .tag(2)
+        })
+        .edgesIgnoringSafeArea(.all)
+        .tabViewStyle(PageTabViewStyle())
+
     }
 }
 
