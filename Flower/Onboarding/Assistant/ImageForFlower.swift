@@ -1,10 +1,3 @@
-//
-//  ImageForFlower.swift
-//  Flower
-//
-//  Created by Apple on 03.10.2023.
-//
-
 import SwiftUI
 
 struct ImageForFlower: View {
@@ -12,8 +5,21 @@ struct ImageForFlower: View {
     var imageFlower: String
     
     var body: some View {
-        Circle()
-            .fill(LinearGradient(gradient: Gradient(colors: [.white, Color(red: 0.98, green: 0.77, blue: 0.77)]), startPoint: .top, endPoint: .bottom))
+        let flowerColor: Color
+        
+        switch imageFlower {
+        case Auxiliary.imagesForFlower().imageFlower1:
+            flowerColor = Color(red: 0.98, green: 0.77, blue: 0.77)
+        case Auxiliary.imagesForFlower().imageFlower2:
+            flowerColor = Color(red: 1.0, green: 0.92, blue: 0.86)
+        case Auxiliary.imagesForFlower().imageFlower3:
+            flowerColor = Color(red: 0.87, green: 0.93, blue: 0.95)
+        default:
+            flowerColor = .clear
+        }
+        
+        return Circle()
+            .fill(LinearGradient(gradient: Gradient(colors: [.white, flowerColor]), startPoint: .top, endPoint: .bottom))
             .frame(width: 297, height: 297)
             .overlay{
                 Image(imageFlower)
@@ -24,6 +30,6 @@ struct ImageForFlower: View {
 
 struct ImageForFlower_Previews: PreviewProvider {
     static var previews: some View {
-        ImageForFlower(imageFlower: Auxiliary.imagesForFlower().imageFlower1)
+        ImageForFlower(imageFlower: Auxiliary.imagesForFlower().imageFlower2)
     }
 }

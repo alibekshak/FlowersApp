@@ -1,10 +1,3 @@
-//
-//  OnboardingPage.swift
-//  Flower
-//
-//  Created by Apple on 03.10.2023.
-//
-
 import SwiftUI
 
 struct OnboardingPage: View {
@@ -25,7 +18,7 @@ struct OnboardingPage: View {
                 
                 Spacer()
                 
-                Image("Dots")
+                
                 
                 Spacer()
                 
@@ -33,7 +26,12 @@ struct OnboardingPage: View {
                 
                 Spacer()
                 
-                ButtonsForFlower()
+                if RGBColor == Color(red: 0.87, green: 0.93, blue: 0.95){
+                    ButtonForLastOnboarding()
+                }else{
+                    ButtonsForFlower()
+                }
+               
                 
                 Spacer()
                 
@@ -45,6 +43,6 @@ struct OnboardingPage: View {
 
 struct OnboardingPage_Previews: PreviewProvider {
     static var previews: some View {
-        OnboardingPage(imageFlower: Auxiliary.imagesForFlower().imageFlower2, textTitle: Auxiliary.textForFlower().textTitle2, textBody: Auxiliary.textForFlower().textBody2, RGBColor: Auxiliary.RGBColor().color2)
+        OnboardingPage(imageFlower: Auxiliary.imagesForFlower().imageFlower3, textTitle: Auxiliary.textForFlower().textTitle3, textBody: Auxiliary.textForFlower().textBody3, RGBColor: Auxiliary.RGBColor().color3)
     }
 }

@@ -16,6 +16,7 @@
 		186BB1A12ACC2C9C00533FB4 /* ButtonsForFlower.swift in Sources */ = {isa = PBXBuildFile; fileRef = 186BB1A02ACC2C9C00533FB4 /* ButtonsForFlower.swift */; };
 		186BB1A42ACC2DD100533FB4 /* Auxiliary.swift in Sources */ = {isa = PBXBuildFile; fileRef = 186BB1A32ACC2DD100533FB4 /* Auxiliary.swift */; };
 		186BB1A62ACC300A00533FB4 /* OnboardingPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 186BB1A52ACC300A00533FB4 /* OnboardingPage.swift */; };
+		186BB1A82ACC5F9E00533FB4 /* ButtonForLastOnboarding.swift in Sources */ = {isa = PBXBuildFile; fileRef = 186BB1A72ACC5F9E00533FB4 /* ButtonForLastOnboarding.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -29,6 +30,7 @@
 		186BB1A02ACC2C9C00533FB4 /* ButtonsForFlower.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonsForFlower.swift; sourceTree = "<group>"; };
 		186BB1A32ACC2DD100533FB4 /* Auxiliary.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Auxiliary.swift; sourceTree = "<group>"; };
 		186BB1A52ACC300A00533FB4 /* OnboardingPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingPage.swift; sourceTree = "<group>"; };
+		186BB1A72ACC5F9E00533FB4 /* ButtonForLastOnboarding.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonForLastOnboarding.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -81,7 +83,7 @@
 		186BB1982ACC14DB00533FB4 /* Onboarding */ = {
 			isa = PBXGroup;
 			children = (
-				186BB1A22ACC2DB900533FB4 /* Model */,
+				186BB1A22ACC2DB900533FB4 /* Helper */,
 				186BB19B2ACC198B00533FB4 /* Assistant */,
 				186BB1A52ACC300A00533FB4 /* OnboardingPage.swift */,
 			);
@@ -94,16 +96,17 @@
 				186BB19C2ACC2BF100533FB4 /* ImageForFlower.swift */,
 				186BB19E2ACC2C5400533FB4 /* TextForFlower.swift */,
 				186BB1A02ACC2C9C00533FB4 /* ButtonsForFlower.swift */,
+				186BB1A72ACC5F9E00533FB4 /* ButtonForLastOnboarding.swift */,
 			);
 			path = Assistant;
 			sourceTree = "<group>";
 		};
-		186BB1A22ACC2DB900533FB4 /* Model */ = {
+		186BB1A22ACC2DB900533FB4 /* Helper */ = {
 			isa = PBXGroup;
 			children = (
 				186BB1A32ACC2DD100533FB4 /* Auxiliary.swift */,
 			);
-			path = Model;
+			path = Helper;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -178,6 +181,7 @@
 			files = (
 				186BB19D2ACC2BF100533FB4 /* ImageForFlower.swift in Sources */,
 				186BB1A42ACC2DD100533FB4 /* Auxiliary.swift in Sources */,
+				186BB1A82ACC5F9E00533FB4 /* ButtonForLastOnboarding.swift in Sources */,
 				186BB18D2ACC0E1000533FB4 /* ContentView.swift in Sources */,
 				186BB18B2ACC0E1000533FB4 /* FlowerApp.swift in Sources */,
 				186BB1A12ACC2C9C00533FB4 /* ButtonsForFlower.swift in Sources */,
