@@ -1,7 +1,7 @@
 import SwiftUI
 
 struct ButtonsForFlower: View {
-//    @Binding var currentTab: Int
+
     var action: () -> Void
     
     var body: some View {
@@ -29,8 +29,8 @@ struct ButtonsForFlower: View {
     }
 }
 
-//struct ButtonsForFlower_Previews: PreviewProvider {
-//    static var previews: some View {
-//        ButtonsForFlower()
-//    }
-//}
+struct ButtonsForFlower_Previews: PreviewProvider {
+    static var previews: some View {
+        ButtonsForFlower(action: {})
+    }
+}

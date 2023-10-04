@@ -1,10 +1,3 @@
-//
-//  TextForFlower.swift
-//  Flower
-//
-//  Created by Apple on 03.10.2023.
-//
-
 import SwiftUI
 
 struct TextForFlower: View {
@@ -28,8 +21,8 @@ struct TextForFlower: View {
     }
 }
 
-//struct TextForFlower_Previews: PreviewProvider {
-//    static var previews: some View {
-//        TextForFlower()
-//    }
-//}
+struct TextForFlower_Previews: PreviewProvider {
+    static var previews: some View {
+        TextForFlower(textTitle: "Просто и удобно", textBody: "Заказать доставку цветов легко как никогда: выберите, заказывайте, дарите счастье – все в несколько кликов.")
+    }
+}
