@@ -14,7 +14,7 @@ struct TextForFlower: View {
             
             Text(textBody)
                 .font(Font.system(size: 17, weight: .light))
-                .foregroundColor(Color(red: 51 / 255, green: 51 / 255, blue: 51 / 255, opacity: 1))
+                .foregroundColor(Auxiliary.OnboardingColor().gray)
                 .multilineTextAlignment(.center)
         }
         .padding(.horizontal, 27)

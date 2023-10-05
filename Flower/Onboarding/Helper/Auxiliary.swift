@@ -25,6 +25,7 @@ struct Auxiliary{
         var color1 = Color(red: 0.98, green: 0.77, blue: 0.77)
         var color2 =  Color(red: 1.0, green: 0.92, blue: 0.86)
         var color3 =  Color(red: 0.87, green: 0.93, blue: 0.95)
+        var gray = Color(red: 51 / 255, green: 51 / 255, blue: 51 / 255, opacity: 1)
     }
     
     struct TextForButtons{

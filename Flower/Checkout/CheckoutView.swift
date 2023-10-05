@@ -1,11 +1,24 @@
 import SwiftUI
 
 struct CheckoutView: View {
+    
+   
+    
     var body: some View {
+            
         NavigationView{
-            Text("Hi")
+            ZStack{
+                Aid.CheckoutColor().backgroundColor
+                VStack{
+                    PickerView()
+                        .padding(.horizontal, 16)
+                    Text("Hi")
+                    
+                }
                 .navigationBarTitle(Aid.CheckoutNameOfBlock().navigationName, displayMode: .inline)
                 .navigationBarItems(leading: navigationBarItemsButton())
+            }
+            .edgesIgnoringSafeArea(.all)
         }
     }
 }
