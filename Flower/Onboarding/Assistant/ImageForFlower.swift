@@ -8,11 +8,11 @@ struct ImageForFlower: View {
         let flowerColor: Color
         
         switch imageFlower {
-        case Auxiliary.imagesForFlower().imageFlower1:
+        case Auxiliary.OnboardingImages().image1:
             flowerColor = Color(red: 0.98, green: 0.77, blue: 0.77)
-        case Auxiliary.imagesForFlower().imageFlower2:
+        case Auxiliary.OnboardingImages().image2:
             flowerColor = Color(red: 1.0, green: 0.92, blue: 0.86)
-        case Auxiliary.imagesForFlower().imageFlower3:
+        case Auxiliary.OnboardingImages().image3:
             flowerColor = Color(red: 0.87, green: 0.93, blue: 0.95)
         default:
             flowerColor = .clear
@@ -30,6 +30,6 @@ struct ImageForFlower: View {
 
 struct ImageForFlower_Previews: PreviewProvider {
     static var previews: some View {
-        ImageForFlower(imageFlower: Auxiliary.imagesForFlower().imageFlower2)
+        ImageForFlower(imageFlower: Auxiliary.OnboardingImages().image2)
     }
 }

@@ -1,5 +1,12 @@
 import SwiftUI
 
+struct OnBoardingStep{
+    var imageFlower: String
+    var textTitle: String
+    var textBody: String
+    var backgroundColor: Color
+}
+
 struct OnboardingView: View {
     
     @State private var currentTab = 0
@@ -8,29 +15,22 @@ struct OnboardingView: View {
         UIScrollView.appearance().bounces = false
     }
     
-    struct OnBoardingStep{
-        var imageFlower: String
-        var textTitle: String
-        var textBody: String
-        var RGBColor: Color
-    }
-    
     private let onBoardingStep = [
-        OnBoardingStep(imageFlower: Auxiliary.imagesForFlower().imageFlower1,
-                       textTitle: Auxiliary.textForFlower().textTitle1, textBody: Auxiliary.textForFlower().textBody1, RGBColor: Auxiliary.RGBColor().color1),
+        OnBoardingStep(imageFlower: Auxiliary.OnboardingImages().image1,
+                       textTitle: Auxiliary.OnboardingText().title1, textBody: Auxiliary.OnboardingText().body1, backgroundColor: Auxiliary.OnboardingColor().color1),
         
-        OnBoardingStep(imageFlower: Auxiliary.imagesForFlower().imageFlower2,
-                       textTitle: Auxiliary.textForFlower().textTitle2, textBody: Auxiliary.textForFlower().textBody2, RGBColor: Auxiliary.RGBColor().color2),
+        OnBoardingStep(imageFlower: Auxiliary.OnboardingImages().image2,
+                       textTitle: Auxiliary.OnboardingText().title2, textBody: Auxiliary.OnboardingText().body2, backgroundColor: Auxiliary.OnboardingColor().color2),
         
-        OnBoardingStep(imageFlower: Auxiliary.imagesForFlower().imageFlower3,
-                       textTitle: Auxiliary.textForFlower().textTitle3, textBody: Auxiliary.textForFlower().textBody3, RGBColor: Auxiliary.RGBColor().color3),
+        OnBoardingStep(imageFlower: Auxiliary.OnboardingImages().image3,
+                       textTitle: Auxiliary.OnboardingText().title3, textBody: Auxiliary.OnboardingText().body3, backgroundColor: Auxiliary.OnboardingColor().color3),
     ]
     
     var body: some View {
         TabView(selection: $currentTab){
             ForEach(0..<onBoardingStep.count){ index in
                 ZStack{
-                    onBoardingStep[index].RGBColor
+                    onBoardingStep[index].backgroundColor
                     
                     VStack{
                         Spacer(minLength: 85)
@@ -45,7 +45,7 @@ struct OnboardingView: View {
                         
                         Spacer()
                         
-                        if onBoardingStep[index].RGBColor == Color(red: 0.87, green: 0.93, blue: 0.95){
+                        if onBoardingStep[index].backgroundColor == Color(red: 0.87, green: 0.93, blue: 0.95){
                             ButtonForLastOnboarding()
                         }else{
                             ButtonsForFlower(action: {
@@ -56,7 +56,7 @@ struct OnboardingView: View {
                         }
                         
                         Spacer()
-                        
+                            
                     }
                 }
             }
