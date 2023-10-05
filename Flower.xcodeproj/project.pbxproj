@@ -22,6 +22,7 @@
 		186BB1B72ACEABFF00533FB4 /* navigationBarItemsButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 186BB1B62ACEABFF00533FB4 /* navigationBarItemsButton.swift */; };
 		186BB1B92ACEB3A200533FB4 /* EntityType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 186BB1B82ACEB3A200533FB4 /* EntityType.swift */; };
 		186BB1BB2ACEB69400533FB4 /* PickerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 186BB1BA2ACEB69400533FB4 /* PickerView.swift */; };
+		186BB1BD2ACECE7C00533FB4 /* AddressView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 186BB1BC2ACECE7C00533FB4 /* AddressView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -41,6 +42,7 @@
 		186BB1B62ACEABFF00533FB4 /* navigationBarItemsButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = navigationBarItemsButton.swift; sourceTree = "<group>"; };
 		186BB1B82ACEB3A200533FB4 /* EntityType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EntityType.swift; sourceTree = "<group>"; };
 		186BB1BA2ACEB69400533FB4 /* PickerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PickerView.swift; sourceTree = "<group>"; };
+		186BB1BC2ACECE7C00533FB4 /* AddressView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddressView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -144,6 +146,7 @@
 			children = (
 				186BB1B62ACEABFF00533FB4 /* navigationBarItemsButton.swift */,
 				186BB1BA2ACEB69400533FB4 /* PickerView.swift */,
+				186BB1BC2ACECE7C00533FB4 /* AddressView.swift */,
 			);
 			path = Assist;
 			sourceTree = "<group>";
@@ -225,6 +228,7 @@
 				186BB1AC2ACD57DB00533FB4 /* OnboardingView.swift in Sources */,
 				186BB1AA2ACD3A6400533FB4 /* DotsIndexView.swift in Sources */,
 				186BB1B92ACEB3A200533FB4 /* EntityType.swift in Sources */,
+				186BB1BD2ACECE7C00533FB4 /* AddressView.swift in Sources */,
 				186BB18B2ACC0E1000533FB4 /* FlowerApp.swift in Sources */,
 				186BB1A12ACC2C9C00533FB4 /* ButtonsForFlower.swift in Sources */,
 				186BB19F2ACC2C5400533FB4 /* TextForFlower.swift in Sources */,

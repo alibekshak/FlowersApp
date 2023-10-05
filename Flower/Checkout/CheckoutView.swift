@@ -10,11 +10,14 @@ struct CheckoutView: View {
             ZStack{
                 Aid.CheckoutColor().backgroundColor
                 VStack{
+                    
                     PickerView()
-                        .padding(.horizontal, 16)
-                    Text("Hi")
+                        .padding(.bottom)
+                    
+                    AddressView()
                     
                 }
+                .padding(.horizontal, 16)
                 .navigationBarTitle(Aid.CheckoutNameOfBlock().navigationName, displayMode: .inline)
                 .navigationBarItems(leading: navigationBarItemsButton())
             }

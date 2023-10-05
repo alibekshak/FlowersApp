@@ -9,7 +9,7 @@ struct PickerView: View {
             ForEach(EntityType.allCases){ type in
                 ZStack{
                     RoundedRectangle(cornerRadius: 12)
-                        .frame(width: .infinity, height: 32)
+                        .frame(height: 32)
                         .foregroundColor(selectedEntityType == type ? Aid.CheckoutColor().pink : Aid.CheckoutColor().white)
                     
                     Text(type.name())

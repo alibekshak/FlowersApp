@@ -24,4 +24,14 @@ struct Aid{
         var white = Color.white
     }
     
+    struct CheckoutChevrons{
+        var chevronLeft = "chevron.left"
+        var chevronRight = "chevron.right"
+    }
+    
+    struct CheckoutAddress{
+        var title = "Адрес"
+        var textButton = "Адрес доставки"
+    }
+    
 }

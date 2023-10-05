@@ -8,7 +8,7 @@ struct navigationBarItemsButton: View {
         Button(action: {
             dismiss()
         }) {
-            Image(systemName: "chevron.left")
+            Image(systemName: Aid.CheckoutChevrons().chevronLeft)
                 .foregroundColor(Color.black)
                 .font(Font.system(size: 16, weight: .semibold))
         }
