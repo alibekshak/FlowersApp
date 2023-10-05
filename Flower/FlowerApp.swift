@@ -4,7 +4,8 @@ import SwiftUI
 struct FlowerApp: App {
     var body: some Scene {
         WindowGroup {
-            OnboardingView()
+//            OnboardingView()
+            CheckoutView()
         }
     }
 }
