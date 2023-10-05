@@ -53,6 +53,7 @@ struct OnboardingView: View {
                                     self.currentTab += 1
                                 }
                             })
+                            .padding(.horizontal, 24)
                         }
                         
                         Spacer()

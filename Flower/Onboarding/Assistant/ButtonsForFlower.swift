@@ -4,8 +4,11 @@ struct ButtonsForFlower: View {
 
     var action: () -> Void
     
+    private let buttonWidth: CGFloat = 106
+    private let buttonHeight: CGFloat = 54
+    
     var body: some View {
-        HStack(spacing: 117){
+        HStack{
             Button(action: {
                 
             }) {
@@ -14,10 +17,12 @@ struct ButtonsForFlower: View {
                     .foregroundColor(Color(red: 51 / 255, green: 51 / 255, blue: 51 / 255, opacity: 1))
             }
             
+            Spacer()
+            
             Button(action: action){
                 ZStack{
                     RoundedRectangle(cornerRadius: 60)
-                        .frame(width: 106, height: 54)
+                        .frame(width: buttonWidth, height: buttonHeight)
                         .foregroundColor(Color(red: 51 / 255, green: 51 / 255, blue: 51 / 255, opacity: 1))
                     
                     Text(Auxiliary.TextForButtons().textNextButton)

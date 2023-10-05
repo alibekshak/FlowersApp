@@ -23,7 +23,7 @@ struct ImageForFlower: View {
             .frame(width: 297, height: 297)
             .overlay{
                 Image(imageFlower)
-                    .offset(y: 12)
+                    .offset(x: 5, y: 12)
             }
     }
 }
