@@ -9,11 +9,11 @@ struct ImageForFlower: View {
         
         switch imageFlower {
         case Auxiliary.OnboardingImages().image1:
-            flowerColor = Color(red: 0.98, green: 0.77, blue: 0.77)
+            flowerColor = Auxiliary.OnboardingColor().color1
         case Auxiliary.OnboardingImages().image2:
-            flowerColor = Color(red: 1.0, green: 0.92, blue: 0.86)
+            flowerColor = Auxiliary.OnboardingColor().color2
         case Auxiliary.OnboardingImages().image3:
-            flowerColor = Color(red: 0.87, green: 0.93, blue: 0.95)
+            flowerColor = Auxiliary.OnboardingColor().color3
         default:
             flowerColor = .clear
         }

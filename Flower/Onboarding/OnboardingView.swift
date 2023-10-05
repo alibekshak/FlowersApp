@@ -1,6 +1,6 @@
 import SwiftUI
 
-struct OnBoardingStep{
+struct OnBoardingStep {
     var imageFlower: String
     var textTitle: String
     var textBody: String

@@ -27,5 +27,10 @@ struct Auxiliary{
         var color3 =  Color(red: 0.87, green: 0.93, blue: 0.95)
     }
     
+    struct TextForButtons{
+        var textSkipButton: String = "Пропустить"
+        var textNextButton: String = "Далее"
+        var textStartButton: String = "Приступить"
+    }
 }
 

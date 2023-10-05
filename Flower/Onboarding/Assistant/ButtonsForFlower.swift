@@ -9,7 +9,7 @@ struct ButtonsForFlower: View {
             Button(action: {
                 
             }) {
-                Text("Пропустить")
+                Text(Auxiliary.TextForButtons().textSkipButton)
                     .font(Font.system(size: 18, weight: .semibold))
                     .foregroundColor(Color(red: 51 / 255, green: 51 / 255, blue: 51 / 255, opacity: 1))
             }
@@ -20,7 +20,7 @@ struct ButtonsForFlower: View {
                         .frame(width: 106, height: 54)
                         .foregroundColor(Color(red: 51 / 255, green: 51 / 255, blue: 51 / 255, opacity: 1))
                     
-                    Text("Далее")
+                    Text(Auxiliary.TextForButtons().textNextButton)
                         .foregroundColor(Color.white)
                         .font(.system(size: 18, weight: .semibold))
                 }

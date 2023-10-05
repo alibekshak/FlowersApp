@@ -23,6 +23,6 @@ struct TextForFlower: View {
 
 struct TextForFlower_Previews: PreviewProvider {
     static var previews: some View {
-        TextForFlower(textTitle: "Просто и удобно", textBody: "Заказать доставку цветов легко как никогда: выберите, заказывайте, дарите счастье – все в несколько кликов.")
+        TextForFlower(textTitle: Auxiliary.OnboardingText().title2, textBody: Auxiliary.OnboardingText().body2)
     }
 }
