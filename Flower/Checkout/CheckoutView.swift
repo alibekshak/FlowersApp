@@ -16,6 +16,10 @@ struct CheckoutView: View {
                     
                     AddressView()
                     
+                    Divider()
+                    
+                    AdditionalInfoView()
+                    
                 }
                 .padding(.horizontal, 16)
                 .navigationBarTitle(Aid.CheckoutNameOfBlock().navigationName, displayMode: .inline)

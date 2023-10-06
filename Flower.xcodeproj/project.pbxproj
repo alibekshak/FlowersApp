@@ -23,6 +23,8 @@
 		186BB1B92ACEB3A200533FB4 /* EntityType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 186BB1B82ACEB3A200533FB4 /* EntityType.swift */; };
 		186BB1BB2ACEB69400533FB4 /* PickerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 186BB1BA2ACEB69400533FB4 /* PickerView.swift */; };
 		186BB1BD2ACECE7C00533FB4 /* AddressView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 186BB1BC2ACECE7C00533FB4 /* AddressView.swift */; };
+		186BB1C12ACFB4E400533FB4 /* AdditionalInfoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 186BB1C02ACFB4E400533FB4 /* AdditionalInfoView.swift */; };
+		18F79C202ACFB6DD009657A9 /* TextFieldView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18F79C1F2ACFB6DD009657A9 /* TextFieldView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -43,6 +45,8 @@
 		186BB1B82ACEB3A200533FB4 /* EntityType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EntityType.swift; sourceTree = "<group>"; };
 		186BB1BA2ACEB69400533FB4 /* PickerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PickerView.swift; sourceTree = "<group>"; };
 		186BB1BC2ACECE7C00533FB4 /* AddressView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddressView.swift; sourceTree = "<group>"; };
+		186BB1C02ACFB4E400533FB4 /* AdditionalInfoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdditionalInfoView.swift; sourceTree = "<group>"; };
+		18F79C1F2ACFB6DD009657A9 /* TextFieldView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextFieldView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -147,6 +151,8 @@
 				186BB1B62ACEABFF00533FB4 /* navigationBarItemsButton.swift */,
 				186BB1BA2ACEB69400533FB4 /* PickerView.swift */,
 				186BB1BC2ACECE7C00533FB4 /* AddressView.swift */,
+				18F79C1F2ACFB6DD009657A9 /* TextFieldView.swift */,
+				186BB1C02ACFB4E400533FB4 /* AdditionalInfoView.swift */,
 			);
 			path = Assist;
 			sourceTree = "<group>";
@@ -223,9 +229,11 @@
 			files = (
 				186BB19D2ACC2BF100533FB4 /* ImageForFlower.swift in Sources */,
 				186BB1A42ACC2DD100533FB4 /* Auxiliary.swift in Sources */,
+				18F79C202ACFB6DD009657A9 /* TextFieldView.swift in Sources */,
 				186BB1A82ACC5F9E00533FB4 /* ButtonForLastOnboarding.swift in Sources */,
 				186BB1B72ACEABFF00533FB4 /* navigationBarItemsButton.swift in Sources */,
 				186BB1AC2ACD57DB00533FB4 /* OnboardingView.swift in Sources */,
+				186BB1C12ACFB4E400533FB4 /* AdditionalInfoView.swift in Sources */,
 				186BB1AA2ACD3A6400533FB4 /* DotsIndexView.swift in Sources */,
 				186BB1B92ACEB3A200533FB4 /* EntityType.swift in Sources */,
 				186BB1BD2ACECE7C00533FB4 /* AddressView.swift in Sources */,
