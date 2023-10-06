@@ -25,6 +25,8 @@
 		186BB1BD2ACECE7C00533FB4 /* AddressView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 186BB1BC2ACECE7C00533FB4 /* AddressView.swift */; };
 		186BB1C12ACFB4E400533FB4 /* AdditionalInfoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 186BB1C02ACFB4E400533FB4 /* AdditionalInfoView.swift */; };
 		18F79C202ACFB6DD009657A9 /* TextFieldView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18F79C1F2ACFB6DD009657A9 /* TextFieldView.swift */; };
+		18F79C242ACFD821009657A9 /* AddPostcardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18F79C232ACFD821009657A9 /* AddPostcardView.swift */; };
+		18F79C262ACFF18B009657A9 /* ButtonForNavigation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18F79C252ACFF18B009657A9 /* ButtonForNavigation.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -47,6 +49,8 @@
 		186BB1BC2ACECE7C00533FB4 /* AddressView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddressView.swift; sourceTree = "<group>"; };
 		186BB1C02ACFB4E400533FB4 /* AdditionalInfoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdditionalInfoView.swift; sourceTree = "<group>"; };
 		18F79C1F2ACFB6DD009657A9 /* TextFieldView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextFieldView.swift; sourceTree = "<group>"; };
+		18F79C232ACFD821009657A9 /* AddPostcardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddPostcardView.swift; sourceTree = "<group>"; };
+		18F79C252ACFF18B009657A9 /* ButtonForNavigation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonForNavigation.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -153,6 +157,8 @@
 				186BB1BC2ACECE7C00533FB4 /* AddressView.swift */,
 				18F79C1F2ACFB6DD009657A9 /* TextFieldView.swift */,
 				186BB1C02ACFB4E400533FB4 /* AdditionalInfoView.swift */,
+				18F79C232ACFD821009657A9 /* AddPostcardView.swift */,
+				18F79C252ACFF18B009657A9 /* ButtonForNavigation.swift */,
 			);
 			path = Assist;
 			sourceTree = "<group>";
@@ -228,6 +234,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				186BB19D2ACC2BF100533FB4 /* ImageForFlower.swift in Sources */,
+				18F79C262ACFF18B009657A9 /* ButtonForNavigation.swift in Sources */,
 				186BB1A42ACC2DD100533FB4 /* Auxiliary.swift in Sources */,
 				18F79C202ACFB6DD009657A9 /* TextFieldView.swift in Sources */,
 				186BB1A82ACC5F9E00533FB4 /* ButtonForLastOnboarding.swift in Sources */,
@@ -239,6 +246,7 @@
 				186BB1BD2ACECE7C00533FB4 /* AddressView.swift in Sources */,
 				186BB18B2ACC0E1000533FB4 /* FlowerApp.swift in Sources */,
 				186BB1A12ACC2C9C00533FB4 /* ButtonsForFlower.swift in Sources */,
+				18F79C242ACFD821009657A9 /* AddPostcardView.swift in Sources */,
 				186BB19F2ACC2C5400533FB4 /* TextForFlower.swift in Sources */,
 				186BB1B42ACE83B600533FB4 /* Aid.swift in Sources */,
 				186BB1AF2ACE811900533FB4 /* CheckoutView.swift in Sources */,

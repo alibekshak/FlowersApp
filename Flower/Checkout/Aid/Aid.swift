@@ -44,4 +44,10 @@ struct Aid{
         var entrance = "Подъезд"
         var floor = "Этаж"
     }
+    
+    struct TextForPostcard{
+        var choosePostcard = "Выбрать открытку"
+        var wish = "Написать пожелание"
+    }
+    
 }

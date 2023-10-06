@@ -34,6 +34,7 @@ struct AdditionalInfoView: View {
                 }
             }
         }
+        .padding([.top, .bottom], 10)
     }
 }
 

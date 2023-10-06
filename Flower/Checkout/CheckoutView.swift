@@ -11,13 +11,16 @@ struct CheckoutView: View {
                     
                     VStack{
                         PickerView()
-                            .padding([.bottom, .top])
                         
                         AddressView()
                         
                         Divider()
                         
                         AdditionalInfoView()
+                        
+                        Divider()
+                        
+                        AddPostcardView()
                         
                     }
                     .padding(.horizontal, 16)

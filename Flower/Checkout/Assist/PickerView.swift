@@ -21,6 +21,7 @@ struct PickerView: View {
                 }
             }
         }
+        .padding([.bottom, .top], 10)
         .onAppear{
             selectedEntityType = EntityType.allCases.first
         }
