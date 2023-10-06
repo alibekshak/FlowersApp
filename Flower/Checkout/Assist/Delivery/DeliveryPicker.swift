@@ -23,7 +23,7 @@ struct DeliveryPicker: View {
                 .labelsHidden()
                 .padding()
                 .frame(width: 300, height: 160)
-                .environment(\.locale, Locale(identifier: "ru_RU"))
+                .environment(\.locale, Locale(identifier: Aid.DeliveryPicker().language))
             
             Spacer().frame(height: 50)
             
@@ -34,14 +34,14 @@ struct DeliveryPicker: View {
                     RoundedRectangle(cornerRadius: 20)
                         .frame(height: 56)
                         .foregroundColor(Aid.CheckoutColor().pink)
-                    Text("Выбрать")
+                    Text(Aid.DeliveryPicker().text)
                         .font(Font.system(size: 16, weight: .bold))
                         .foregroundColor(Aid.CheckoutColor().white)
                 }
                 .padding()
             }
         }
-        .navigationBarTitle(Text("Выбор времени"))
+        .navigationBarTitle(Text(Aid.DeliveryPicker().BarTitle))
     }
     
     private func dismiss() {

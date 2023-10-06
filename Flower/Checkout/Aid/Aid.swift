@@ -55,4 +55,10 @@ struct Aid{
         var text = "Выбрать"
     }
     
+    struct DeliveryPicker{
+        var language = "ru_RU"
+        var text = "Выбрать"
+        var BarTitle = "Выбор времени"
+    }
+    
 }
