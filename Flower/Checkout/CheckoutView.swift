@@ -28,6 +28,7 @@ struct CheckoutView: View {
                         
                         Divider()
                         
+                        OrderPriceView()
                         
                     }
                     .padding(.horizontal, 16)
