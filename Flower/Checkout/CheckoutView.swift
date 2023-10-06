@@ -2,31 +2,32 @@ import SwiftUI
 
 struct CheckoutView: View {
     
-   
     
     var body: some View {
-            
         NavigationView{
-            ZStack{
-                Aid.CheckoutColor().backgroundColor
-                VStack{
+            ScrollView{
+                ZStack{
+                    Aid.CheckoutColor().backgroundColor
                     
-                    PickerView()
-                        .padding(.bottom)
-                    
-                    AddressView()
-                    
-                    Divider()
-                    
-                    AdditionalInfoView()
-                    
+                    VStack{
+                        PickerView()
+                            .padding([.bottom, .top])
+                        
+                        AddressView()
+                        
+                        Divider()
+                        
+                        AdditionalInfoView()
+                        
+                    }
+                    .padding(.horizontal, 16)
                 }
-                .padding(.horizontal, 16)
-                .navigationBarTitle(Aid.CheckoutNameOfBlock().navigationName, displayMode: .inline)
-                .navigationBarItems(leading: navigationBarItemsButton())
             }
-            .edgesIgnoringSafeArea(.all)
+            .navigationBarTitle(Aid.CheckoutNameOfBlock().navigationName, displayMode: .inline)
+            .navigationBarItems(leading: navigationBarItemsButton())
+//            .edgesIgnoringSafeArea(.all)
         }
+       
     }
 }
 

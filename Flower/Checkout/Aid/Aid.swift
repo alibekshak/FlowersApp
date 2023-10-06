@@ -23,7 +23,7 @@ struct Aid{
         var grayTextField = Color(red: 0.74, green: 0.74, blue: 0.74)
         var blackTextField = Color(red: 0.2, green: 0.2, blue: 0.2)
         var white = Color.white
-       
+    
     }
     
     struct CheckoutChevrons{
