@@ -2,9 +2,6 @@ import SwiftUI
 
 struct TimeChoiceView: View {
     
-    var startTime: String
-    var endTime: String
-    
     @State private var selectedIndex: Int? = nil
     @State private var isSheetPresented = false
     

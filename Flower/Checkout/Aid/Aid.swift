@@ -55,14 +55,4 @@ struct Aid{
         var text = "Выбрать"
     }
     
-    struct Time{
-        var start1 = "10:00"
-        var start2 = "13:00"
-        var start3 = "16:00"
-        
-        var end1 = "12:00"
-        var end2 = "15:00"
-        var end3 = "18:00"
-    }
-    
 }

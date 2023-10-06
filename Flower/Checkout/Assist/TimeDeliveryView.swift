@@ -10,7 +10,7 @@ struct TimeDeliveryView: View {
                 .bold()
             ScrollView(.horizontal, showsIndicators: false){
                 HStack{
-                    TimeChoiceView(startTime: Aid.Time().start1, endTime: Aid.Time().end1)
+                    TimeChoiceView()
                 }
             }
         }
