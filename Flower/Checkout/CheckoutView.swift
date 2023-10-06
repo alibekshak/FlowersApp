@@ -22,12 +22,19 @@ struct CheckoutView: View {
                         
                         AddPostcardView()
                         
+                        Divider()
+                        
+                        TimeDeliveryView()
+                        
+                        Divider()
+                        
+                        
                     }
                     .padding(.horizontal, 16)
                 }
             }
             .navigationBarTitle(Aid.CheckoutNameOfBlock().navigationName, displayMode: .inline)
-            .navigationBarItems(leading: navigationBarItemsButton())
+            .navigationBarItems(leading: NavigationBarItemsButton())
 //            .edgesIgnoringSafeArea(.all)
         }
        

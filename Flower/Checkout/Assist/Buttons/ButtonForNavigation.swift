@@ -1,10 +1,3 @@
-//
-//  ButtonForNavigation.swift
-//  Flower
-//
-//  Created by Apple on 06.10.2023.
-//
-
 import SwiftUI
 
 struct ButtonForNavigation: View {
@@ -15,7 +8,7 @@ struct ButtonForNavigation: View {
         ZStack{
             RoundedRectangle(cornerRadius: 20)
                 .frame(height: 56)
-                .foregroundColor(Color.white)
+                .foregroundColor(Aid.CheckoutColor().white)
             HStack{
                 Text(Aid.CheckoutAddress().textButton)
                     .font(Font.system(size: 16, weight: .medium))

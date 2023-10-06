@@ -1,6 +1,6 @@
 import SwiftUI
 
-struct navigationBarItemsButton: View {
+struct NavigationBarItemsButton: View {
     
     @Environment(\.dismiss) var dismiss
     
@@ -15,8 +15,8 @@ struct navigationBarItemsButton: View {
     }
 }
 
-struct navigationBarItemsButton_Previews: PreviewProvider {
+struct NavigationBarItemsButton_Previews: PreviewProvider {
     static var previews: some View {
-        navigationBarItemsButton()
+        NavigationBarItemsButton()
     }
 }
