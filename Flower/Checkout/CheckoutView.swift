@@ -24,7 +24,7 @@ struct CheckoutView: View {
                         
                         Divider()
                         
-                        TimeDeliveryView()
+                        TimeChoiceView()
                         
                         Divider()
                         
