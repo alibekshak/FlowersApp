@@ -10,25 +10,31 @@ struct CheckoutView: View {
                     Aid.CheckoutColor().backgroundColor
                     
                     VStack{
-                        PickerView()
+                        Group{
+                            PickerView()
+                            
+                            AddressView()
+                            
+                            Divider()
+                            
+                            AdditionalInfoView()
+                            
+                            Divider()
+                            
+                            AddPostcardView()
+                        }
                         
-                        AddressView()
-                        
-                        Divider()
-                        
-                        AdditionalInfoView()
-                        
-                        Divider()
-                        
-                        AddPostcardView()
-                        
-                        Divider()
-                        
-                        TimeChoiceView()
-                        
-                        Divider()
-                        
-                        OrderPriceView()
+                        Group{
+                            Divider()
+                            
+                            TimeChoiceView()
+                            
+                            Divider()
+                            
+                            OrderPriceView()
+                            
+                            TotalView()
+                        }
                         
                     }
                     .padding(.horizontal, 16)

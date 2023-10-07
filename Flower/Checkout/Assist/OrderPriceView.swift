@@ -27,7 +27,7 @@ struct OrderPriceView: View {
                 .font(Font.system(size: 14, weight: .medium))
 
             }
-            .padding()
+            .padding([.top, .bottom])
         }
     }
 }
