@@ -40,13 +40,14 @@ struct TimeChoiceView: View {
                     
                 }
                 .padding(.horizontal)
+                .padding([.top, .bottom], 5)
             }
             .sheet(isPresented: $isSheetPresented) {
                 DeliveryPicker(selectedDate: .constant(Date()))
                     .presentationDetents([.medium, .large])
             }
         }
-//        .padding(.horizontal, -16)
+        .padding([.top, .bottom], 5)
     }
     func formattedDate(_ date: Date) -> String {
         let dateFormatter = DateFormatter()

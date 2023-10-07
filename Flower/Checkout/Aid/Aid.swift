@@ -61,4 +61,9 @@ struct Aid{
         var BarTitle = "Выбор времени"
     }
     
+    struct DifferentText{
+        var buy = "Купить"
+        
+    }
+    
 }

@@ -34,6 +34,8 @@ struct CheckoutView: View {
                             OrderPriceView()
                             
                             TotalView()
+                            
+                            BuyButtonView()
                         }
                         
                     }

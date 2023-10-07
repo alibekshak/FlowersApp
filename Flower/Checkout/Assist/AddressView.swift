@@ -8,7 +8,7 @@ struct AddressView: View {
                 .bold()
             ButtonForNavigation(name: Aid.CheckoutAddress().textButton)
         }
-//        .padding([.top, .bottom], 5)
+        .padding([.top, .bottom], 5)
     }
 }
 
