@@ -28,7 +28,6 @@
 		18F79C202ACFB6DD009657A9 /* TextFieldView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18F79C1F2ACFB6DD009657A9 /* TextFieldView.swift */; };
 		18F79C242ACFD821009657A9 /* AddPostcardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18F79C232ACFD821009657A9 /* AddPostcardView.swift */; };
 		18F79C282ACFFABA009657A9 /* ButtonForNavigation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18F79C272ACFFABA009657A9 /* ButtonForNavigation.swift */; };
-		18F79C2E2AD00069009657A9 /* TimeDeliveryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18F79C2D2AD00069009657A9 /* TimeDeliveryView.swift */; };
 		18F79C302AD008BE009657A9 /* DeliveryPicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18F79C2F2AD008BE009657A9 /* DeliveryPicker.swift */; };
 		18F79C322AD00A84009657A9 /* TimeChoiceView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18F79C312AD00A84009657A9 /* TimeChoiceView.swift */; };
 		18F79C342AD0210B009657A9 /* TimeEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18F79C332AD0210B009657A9 /* TimeEntity.swift */; };
@@ -57,7 +56,6 @@
 		18F79C1F2ACFB6DD009657A9 /* TextFieldView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextFieldView.swift; sourceTree = "<group>"; };
 		18F79C232ACFD821009657A9 /* AddPostcardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddPostcardView.swift; sourceTree = "<group>"; };
 		18F79C272ACFFABA009657A9 /* ButtonForNavigation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonForNavigation.swift; sourceTree = "<group>"; };
-		18F79C2D2AD00069009657A9 /* TimeDeliveryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimeDeliveryView.swift; sourceTree = "<group>"; };
 		18F79C2F2AD008BE009657A9 /* DeliveryPicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeliveryPicker.swift; sourceTree = "<group>"; };
 		18F79C312AD00A84009657A9 /* TimeChoiceView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimeChoiceView.swift; sourceTree = "<group>"; };
 		18F79C332AD0210B009657A9 /* TimeEntity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimeEntity.swift; sourceTree = "<group>"; };
@@ -283,7 +281,6 @@
 				186BB19F2ACC2C5400533FB4 /* TextForFlower.swift in Sources */,
 				18F79C322AD00A84009657A9 /* TimeChoiceView.swift in Sources */,
 				186BB1B42ACE83B600533FB4 /* Aid.swift in Sources */,
-				18F79C2E2AD00069009657A9 /* TimeDeliveryView.swift in Sources */,
 				18F79C302AD008BE009657A9 /* DeliveryPicker.swift in Sources */,
 				186BB1AF2ACE811900533FB4 /* CheckoutView.swift in Sources */,
 				186BB1BB2ACEB69400533FB4 /* PickerView.swift in Sources */,

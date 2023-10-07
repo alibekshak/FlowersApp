@@ -32,7 +32,7 @@ struct DeliveryPicker: View {
             }) {
                 ZStack{
                     RoundedRectangle(cornerRadius: 20)
-                        .frame(height: 56)
+                        .frame(width: 327,height: 56)
                         .foregroundColor(Aid.CheckoutColor().pink)
                     Text(Aid.DeliveryPicker().text)
                         .font(Font.system(size: 16, weight: .bold))
