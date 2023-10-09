@@ -10,7 +10,7 @@ struct ButtonForNavigation: View {
                 .frame(height: 56)
                 .foregroundColor(Aid.CheckoutColor().white)
             HStack{
-                Text(Aid.CheckoutAddress().textButton)
+                Text(name)
                     .font(Font.system(size: 16, weight: .medium))
                     .foregroundColor(Color.black)
                 

@@ -2,6 +2,7 @@ import SwiftUI
 
 struct CheckoutView: View {
     
+    @State private var selectedEntityType: EntityType? = nil
     
     var body: some View {
         NavigationView{
@@ -11,9 +12,14 @@ struct CheckoutView: View {
                     
                     VStack{
                         Group{
-                            PickerView()
+                            PickerView(selectedEntityType: $selectedEntityType)
                             
-                            AddressView()
+            
+                            if selectedEntityType == EntityType.delivery{
+                                AddressView()
+                            }
+                           
+                            
                             
                             Divider()
                             
@@ -27,7 +33,10 @@ struct CheckoutView: View {
                         Group{
                             Divider()
                             
-                            TimeChoiceView()
+                            if selectedEntityType == EntityType.delivery{
+                                TimeChoiceView()
+                            }
+                           
                             
                             Divider()
                             
@@ -42,11 +51,12 @@ struct CheckoutView: View {
                     .padding(.horizontal, 16)
                 }
             }
+            
             .navigationBarTitle(Aid.CheckoutNameOfBlock().navigationName, displayMode: .inline)
             .navigationBarItems(leading: NavigationBarItemsButton())
 //            .edgesIgnoringSafeArea(.all)
+            
         }
-       
     }
 }
 

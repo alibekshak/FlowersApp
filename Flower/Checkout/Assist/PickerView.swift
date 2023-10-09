@@ -2,7 +2,7 @@ import SwiftUI
 
 struct PickerView: View {
     
-    @State private var selectedEntityType: EntityType? = nil
+    @Binding var selectedEntityType: EntityType?
     
     var body: some View {
         HStack{
@@ -29,8 +29,8 @@ struct PickerView: View {
     }
 }
 
-struct PickerView_Previews: PreviewProvider {
-    static var previews: some View {
-        PickerView()
-    }
-}
+//struct PickerView_Previews: PreviewProvider {
+//    static var previews: some View {
+//        PickerView()
+//    }
+//}
