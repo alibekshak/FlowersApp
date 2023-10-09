@@ -1,10 +1,3 @@
-//
-//  BuyButtonView.swift
-//  Flower
-//
-//  Created by Apple on 07.10.2023.
-//
-
 import SwiftUI
 
 struct BuyButtonView: View {

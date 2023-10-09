@@ -78,7 +78,7 @@ struct Aid{
     
     struct TextForTotal{
         var total = "Итого"
-        var moneyForTotal = "150 000 ₸"
+        var moneyForTotal = "20 000 ₸"
     }
     
 }

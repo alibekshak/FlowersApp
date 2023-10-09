@@ -1,7 +1,6 @@
 import SwiftUI
 
 struct DeliveryPicker: View {
-//    @ObservedObject var orderService: OrderService
     
     @Binding var selectedDate: Date
     @Environment(\.presentationMode) private var presentationMode

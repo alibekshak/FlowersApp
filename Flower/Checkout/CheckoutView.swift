@@ -26,11 +26,11 @@ struct CheckoutView: View {
                             Divider()
                             
                             AddPostcardView()
+                            
+                            Divider()
                         }
                         
                         Group{
-                            Divider()
-                            
                             if selectedEntityType == EntityType.delivery{
                                 TimeChoiceView()
                                 Divider()
