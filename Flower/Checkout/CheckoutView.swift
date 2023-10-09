@@ -4,6 +4,8 @@ struct CheckoutView: View {
     
     @State private var selectedEntityType: EntityType? = nil
     
+    @State private var isSecondPartVisible: Bool = true
+    
     var body: some View {
         NavigationView{
             ScrollView{
@@ -14,16 +16,13 @@ struct CheckoutView: View {
                         Group{
                             PickerView(selectedEntityType: $selectedEntityType)
                             
-            
                             if selectedEntityType == EntityType.delivery{
                                 AddressView()
                             }
-                           
-                            
                             
                             Divider()
                             
-                            AdditionalInfoView()
+                            AdditionalInfoView(isSecondPartVisible: $isSecondPartVisible)
                             
                             Divider()
                             
@@ -36,7 +35,6 @@ struct CheckoutView: View {
                             if selectedEntityType == EntityType.delivery{
                                 TimeChoiceView()
                             }
-                           
                             
                             Divider()
                             
@@ -56,6 +54,13 @@ struct CheckoutView: View {
             .navigationBarItems(leading: NavigationBarItemsButton())
 //            .edgesIgnoringSafeArea(.all)
             
+        }
+        .onChange(of: selectedEntityType){ newValue in
+            if newValue == EntityType.delivery{
+                isSecondPartVisible = true
+            }else{
+                isSecondPartVisible = false
+            }
         }
     }
 }

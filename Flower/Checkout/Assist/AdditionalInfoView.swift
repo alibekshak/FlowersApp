@@ -2,6 +2,8 @@ import SwiftUI
 
 struct AdditionalInfoView: View {
     
+    @Binding var isSecondPartVisible: Bool
+    
     @State var name: String = ""
     @State var phone: String = ""
     @State var building: String = ""
@@ -16,12 +18,12 @@ struct AdditionalInfoView: View {
             Text(Aid.CheckoutNameOfBlock().addInfo)
                 .font(.title3)
                 .bold()
-
+            
             VStack{
                 TextFieldView(text: $name, nameOfField: Aid.NameOfTextField().nameCustomer)
                 TextFieldView(text:$phone, nameOfField: Aid.NameOfTextField().phoneCustomer)
             }
-            
+                        if isSecondPartVisible{
             VStack{
                 HStack{
                     TextFieldView(text: $building, nameOfField: Aid.NameOfTextField().buildingNumber)
@@ -34,12 +36,13 @@ struct AdditionalInfoView: View {
                 }
             }
         }
+        }
         .padding([.top, .bottom], 10)
     }
 }
 
-struct AdditionalInfoView_Previews: PreviewProvider {
-    static var previews: some View {
-        AdditionalInfoView()
-    }
-}
+//struct AdditionalInfoView_Previews: PreviewProvider {
+//    static var previews: some View {
+//        AdditionalInfoView()
+//    }
+//}
