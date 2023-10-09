@@ -11,22 +11,20 @@ struct OrderPriceView: View {
             HStack{
 
                 VStack(alignment: .leading,spacing: 16){
-                    Text("Сумма")
-                    Text("Дополнения")
-                    Text("Доставка")
+                    Text(Aid.TextForOrderPrice().sum)
+                    Text(Aid.TextForOrderPrice().additions)
+                    Text(Aid.TextForOrderPrice().delivery)
                 }
-                .font(Font.system(size: 14, weight: .medium))
                 
                 Spacer()
                 
                 VStack(alignment: .trailing, spacing: 16){
-                    Text("15 000 ₸")
-                    Text("5 000 ₸")
-                    Text("Бесплатно")
+                    Text(Aid.TextForOrderPrice().moneyForSum)
+                    Text(Aid.TextForOrderPrice().moneyForAdditions)
+                    Text(Aid.TextForOrderPrice().moneyForDelivery)
                 }
-                .font(Font.system(size: 14, weight: .medium))
-
             }
+            .font(Font.system(size: 14, weight: .medium))
             .padding([.top, .bottom])
         }
     }

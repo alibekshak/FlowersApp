@@ -4,9 +4,9 @@ struct TotalView: View {
     var body: some View {
         VStack(alignment: .leading){
             HStack{
-                Text("Итого")
+                Text(Aid.TextForTotal().total)
                 Spacer()
-                Text("150 000 ₸")
+                Text(Aid.TextForTotal().moneyForTotal)
             }
         }
         .font(Font.system(size: 16, weight: .bold))

@@ -13,11 +13,11 @@ struct BuyButtonView: View {
             
         }){
             ZStack{
-                RoundedRectangle(cornerRadius: 20)
+                RoundedRectangle(cornerRadius: 78)
                     .frame(height: 56)
                     .foregroundColor(Aid.CheckoutColor().pink)
                 
-                Text(Aid.DifferentText().buy)
+                Text(Aid.TextForBuyButton().buy)
                     .foregroundColor(Aid.CheckoutColor().white)
                     .font(Font.system(size: 18, weight: .bold))
             }

@@ -12,12 +12,12 @@ struct ButtonForNavigation: View {
             HStack{
                 Text(name)
                     .font(Font.system(size: 16, weight: .medium))
-                    .foregroundColor(Color.black)
+                    .foregroundColor(Aid.CheckoutColor().blackTextField)
                 
                 Spacer()
                 
                 Image(systemName: Aid.CheckoutChevrons().chevronRight)
-                    .foregroundColor(Color.black)
+                    .foregroundColor(Aid.CheckoutColor().black)
                     .font(Font.system(size: 16, weight: .semibold))
             }
             .padding(.horizontal, 16)

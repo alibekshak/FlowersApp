@@ -23,6 +23,7 @@ struct Aid{
         var grayTextField = Color(red: 0.74, green: 0.74, blue: 0.74)
         var blackTextField = Color(red: 0.2, green: 0.2, blue: 0.2)
         var white = Color.white
+        var black = Color.black
     
     }
     
@@ -61,9 +62,23 @@ struct Aid{
         var BarTitle = "Выбор времени"
     }
     
-    struct DifferentText{
+    struct TextForBuyButton{
         var buy = "Купить"
+    }
+    
+    struct TextForOrderPrice{
+        var sum = "Сумма"
+        var additions = "Дополнения"
+        var delivery = "Доставка"
         
+        var moneyForSum = "15 000 ₸"
+        var moneyForAdditions = "5 000 ₸"
+        var moneyForDelivery = "Бесплатно"
+    }
+    
+    struct TextForTotal{
+        var total = "Итого"
+        var moneyForTotal = "150 000 ₸"
     }
     
 }

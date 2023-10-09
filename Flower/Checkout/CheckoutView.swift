@@ -3,12 +3,11 @@ import SwiftUI
 struct CheckoutView: View {
     
     @State private var selectedEntityType: EntityType? = nil
-    
     @State private var isSecondPartVisible: Bool = true
     
     var body: some View {
         NavigationView{
-            ScrollView{
+            ScrollView(showsIndicators: false){
                 ZStack{
                     Aid.CheckoutColor().backgroundColor
                     
@@ -34,9 +33,8 @@ struct CheckoutView: View {
                             
                             if selectedEntityType == EntityType.delivery{
                                 TimeChoiceView()
+                                Divider()
                             }
-                            
-                            Divider()
                             
                             OrderPriceView()
                             
@@ -49,11 +47,9 @@ struct CheckoutView: View {
                     .padding(.horizontal, 16)
                 }
             }
-            
             .navigationBarTitle(Aid.CheckoutNameOfBlock().navigationName, displayMode: .inline)
+            .background(Aid.CheckoutColor().backgroundColor)
             .navigationBarItems(leading: NavigationBarItemsButton())
-//            .edgesIgnoringSafeArea(.all)
-            
         }
         .onChange(of: selectedEntityType){ newValue in
             if newValue == EntityType.delivery{

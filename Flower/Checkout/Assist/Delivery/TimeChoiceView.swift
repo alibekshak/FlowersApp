@@ -8,7 +8,6 @@ struct TimeChoiceView: View {
     
     var body: some View {
         VStack(alignment: .leading){
-
                 Text(Aid.CheckoutNameOfBlock().timeDelivery)
                     .font(.title3)
                     .bold()
@@ -17,7 +16,7 @@ struct TimeChoiceView: View {
                 isSheetPresented.toggle()
             }) {
                 ZStack {
-                    RoundedRectangle(cornerRadius: 20)
+                    RoundedRectangle(cornerRadius: 78)
                         .frame(height: 56)
                         .foregroundColor( Aid.CheckoutColor().pink)
                     
@@ -29,7 +28,7 @@ struct TimeChoiceView: View {
                             Text(Aid.Delivery().imoju)
                         }
                         
-                        HStack(spacing: 50){
+                        HStack(spacing: 60){
                             Text(Aid.Delivery().text)
                             
                             Text("\(formattedDate(selectedDate))")
@@ -39,7 +38,6 @@ struct TimeChoiceView: View {
                     }
                     
                 }
-                .padding(.horizontal)
                 .padding([.top, .bottom], 5)
             }
             .sheet(isPresented: $isSheetPresented) {

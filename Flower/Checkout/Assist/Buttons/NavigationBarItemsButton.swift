@@ -9,7 +9,7 @@ struct NavigationBarItemsButton: View {
             dismiss()
         }) {
             Image(systemName: Aid.CheckoutChevrons().chevronLeft)
-                .foregroundColor(Color.black)
+                .foregroundColor(Aid.CheckoutColor().black)
                 .font(Font.system(size: 16, weight: .semibold))
         }
     }
