@@ -37,8 +37,9 @@ struct SelectPostcards: View {
                 .font(Font.system(size: 16, weight: .bold))
                 .foregroundColor(Aid.CheckoutColor().blackTextField)
             
-            LazyVGrid(columns: columns, alignment: .center){
+            LazyVGrid(columns: columns, alignment: .center, spacing: 16){
                 ForEach(Array(selectedImage.keys.sorted().enumerated()), id: \.element ){ index, imageName in
+                    
                     let isSelected = Binding<Bool>(
                         get: { selectedImage[imageName] ?? false },
                         set: { newValue in
