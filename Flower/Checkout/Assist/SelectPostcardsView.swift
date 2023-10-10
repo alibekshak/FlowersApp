@@ -73,7 +73,6 @@ struct SelectPostcardsView: View {
                     }
                     .onTapGesture {
                         isSelected.wrappedValue.toggle()
-                        
                     }
                 }
             }
