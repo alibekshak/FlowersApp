@@ -9,9 +9,27 @@ import SwiftUI
 
 struct SelectPostcards: View {
     
-    @State private var selectedImage: [String: Bool] = ["postcard1": false, "postcard2": false, "postcard3": false, "postcard4": false, "postcard5": false]
+    @State private var selectedImage: [String: Bool] = [
+        "postcard1": false,
+        "postcard2": false,
+        "postcard3": false,
+        "postcard4": false,
+        "postcard5": false
+    ]
     
-    let rows = Array(repeating: GridItem(.fixed(50), spacing: 5, alignment: .leading), count: 4)
+    let columns = [
+        GridItem(.fixed(110)),
+        GridItem(.fixed(110)),
+        GridItem(.fixed(110)),
+    ]
+    
+    let textForPostcards = [
+        "Открытка\n“Я люблю тебя”",
+        "Открытка\n“Любимой маме”",
+        "Открытка\n“Котик и сметана”",
+        "Открытка\n“Love is”",
+        "Открытка\n“Love is”",
+    ]
     
     var body: some View {
         VStack{
@@ -19,37 +37,53 @@ struct SelectPostcards: View {
                 .font(Font.system(size: 16, weight: .bold))
                 .foregroundColor(Aid.CheckoutColor().blackTextField)
             
-            ScrollView(.horizontal, showsIndicators: false){
-                LazyHGrid(rows: rows, spacing: 7){
-                    ForEach(selectedImage.keys.sorted(), id: \.self ){ imageName in
-                            Image(imageName)
-                                .resizable()
-                                .frame(width: 110, height: 90)
-                                .background(
-                                    RoundedRectangle(cornerRadius: 16)
-                                        .stroke(selectedImage[imageName] ?? false ? Aid.CheckoutColor().pink : Color.clear, lineWidth: 1)
-                                )
-                                .onTapGesture {
-                                    selectedImage[imageName]?.toggle()
-                                }
-                        VStack(alignment: .center){
-                            Text(Aid.TextSelectPostcards().postcard1)
-                                .font(Font.system(size: 12, weight: .medium))
-//                                .frame(width: 110)
-                                .lineLimit(2)
+            LazyVGrid(columns: columns, alignment: .center){
+                ForEach(Array(selectedImage.keys.sorted().enumerated()), id: \.element ){ index, imageName in
+                    let isSelected = Binding<Bool>(
+                        get: { selectedImage[imageName] ?? false },
+                        set: { newValue in
+                            selectedImage[imageName] = newValue
                         }
-//                        .padding()
+                    )
+                    
+                    VStack(spacing: 6){
+                        Rectangle()
+                            .foregroundColor(.clear)
+                            .frame(width: 110, height: 90)
+                            .background(
+                                Image(imageName)
+                                    .resizable()
+                                    .aspectRatio(contentMode: .fill)
+                                    .frame(width: 110, height: 90)
+                                    .clipped()
+                            )
+                            .cornerRadius(16)
+                            .overlay(
+                                RoundedRectangle(cornerRadius: 16)
+                                    .inset(by: isSelected.wrappedValue ? 1.5 : 0)
+                                    .stroke(Aid.CheckoutColor().pink, lineWidth: isSelected.wrappedValue ? 3 : 0)
+                            )
+                        
+                        Text(textForPostcards[index])
+                            .font(Font.system(size: 10, weight: .medium))
+                            .multilineTextAlignment(.center)
+                            .foregroundColor(Aid.CheckoutColor().Grey80)
+                            .frame(width: 110, height: 25, alignment: .top)
                     }
-                    .padding([.horizontal])
+                    .onTapGesture {
+                        isSelected.wrappedValue.toggle()
+                    }
                 }
             }
-            
         }
     }
 }
+
 
 struct SelectPostcards_Previews: PreviewProvider {
     static var previews: some View {
         SelectPostcards()
     }
 }
+
+

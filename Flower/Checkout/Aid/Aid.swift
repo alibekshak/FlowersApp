@@ -22,6 +22,7 @@ struct Aid{
         var gray = Color(red: 0.61, green: 0.63, blue: 0.67)
         var grayTextField = Color(red: 0.74, green: 0.74, blue: 0.74)
         var blackTextField = Color(red: 0.2, green: 0.2, blue: 0.2)
+        var Grey80 = Color(red: 0.31, green: 0.31, blue: 0.31)
         var white = Color.white
         var black = Color.black
     
@@ -83,11 +84,11 @@ struct Aid{
     
     struct TextSelectPostcards{
         var title = "Выбор открытки"
-        var postcard1 = "Открытка “Я люблю тебя”"
-        var postcard2 = "Открытка “Любимой маме”"
-        var postcard3 = "Открытка “Котик и сметана”"
-        var postcard4 = "Открытка “Love is”"
-        var postcard5 = "Открытка “Love is”"
+        var postcard1 = "Открытка /n“Я люблю тебя”"
+        var postcard2 = "Открытка /n“Любимой маме”"
+        var postcard3 = "Открытка /n“Котик и сметана”"
+        var postcard4 = "Открытка /n“Love is”"
+        var postcard5 = "Открытка /n“Love is”"
     }
     
 }
