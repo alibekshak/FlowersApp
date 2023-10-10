@@ -13,7 +13,7 @@ struct TimeChoiceView: View {
                     .bold()
             
             Button(action: {
-                isSheetPresented.toggle()
+                self.isSheetPresented.toggle()
             }) {
                 ZStack {
                     RoundedRectangle(cornerRadius: 78)
@@ -36,13 +36,16 @@ struct TimeChoiceView: View {
                         .foregroundColor( Aid.CheckoutColor().white)
                         .font(Font.system(size: 17, weight: .medium))
                     }
-                    
                 }
                 .padding([.top, .bottom], 5)
             }
             .sheet(isPresented: $isSheetPresented) {
-                DeliveryPicker(selectedDate: .constant(Date()))
-                    .presentationDetents([.medium, .large])
+                if #available(iOS 16, *){
+                    DeliveryPicker(selectedDate: $selectedDate)
+                        .presentationDetents([.medium, .large])
+                } else {
+                    DeliveryPicker(selectedDate: $selectedDate)
+                }
             }
         }
         .padding([.top, .bottom], 5)
@@ -54,10 +57,10 @@ struct TimeChoiceView: View {
         let formattedString = dateFormatter.string(from: date)
         _ = formattedString.components(separatedBy: ", ")
         
-        //        if components.count == 2 {
-        //            viewModel.creatableOrder.deliveryDate = components[0]
-        //            viewModel.creatableOrder.deliveryTime = components[1]
-        //        }
+//                if components.count == 2 {
+//                    viewModel.creatableOrder.deliveryDate = components[0]
+//                    viewModel.creatableOrder.deliveryTime = components[1]
+//                }
         return dateFormatter.string(from: date)
         
     }

@@ -8,7 +8,7 @@ struct TextFieldView: View {
     
     var body: some View {
             ZStack{
-                RoundedRectangle(cornerRadius: 12)
+                RoundedRectangle(cornerRadius: 20)
                     .frame(height: 58)
                     .foregroundColor(Aid.CheckoutColor().white)
                 

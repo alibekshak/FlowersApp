@@ -8,7 +8,7 @@ struct BuyButtonView: View {
             ZStack{
                 RoundedRectangle(cornerRadius: 78)
                     .frame(height: 56)
-                    .foregroundColor(Aid.CheckoutColor().pink)
+                    .foregroundColor(Aid.CheckoutColor().blackTextField)
                 
                 Text(Aid.TextForBuyButton().buy)
                     .foregroundColor(Aid.CheckoutColor().white)
