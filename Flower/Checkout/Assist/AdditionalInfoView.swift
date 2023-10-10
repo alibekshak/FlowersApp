@@ -27,12 +27,12 @@ struct AdditionalInfoView: View {
                 VStack{
                     HStack{
                         TextFieldView(text: $building, nameOfField: Aid.NameOfTextField().buildingNumber)
-                        TextFieldView(text:$apartment, nameOfField: Aid.NameOfTextField().apartmentNumber)
+                        TextFieldForNumberView(nameOfField: Aid.NameOfTextField().apartmentNumber, score: $apartment)
                     }
                     
                     HStack{
-                        TextFieldView(text: $entrance, nameOfField: Aid.NameOfTextField().entrance)
-                        TextFieldView(text:$floor, nameOfField: Aid.NameOfTextField().floor)
+                        TextFieldForNumberView(nameOfField: Aid.NameOfTextField().entrance, score: $entrance)
+                        TextFieldForNumberView(nameOfField: Aid.NameOfTextField().floor, score: $floor)
                     }
                 }
             }

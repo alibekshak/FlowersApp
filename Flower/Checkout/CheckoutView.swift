@@ -14,7 +14,7 @@ struct CheckoutView: View {
                     VStack{
                         Group{
                             PickerView(selectedEntityType: $selectedEntityType)
-                            
+
                             if selectedEntityType == EntityType.delivery{
                                 AddressView()
                             }

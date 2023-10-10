@@ -10,6 +10,7 @@
 		18249D4B2AD0358C00A75E90 /* OrderPriceView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18249D4A2AD0358C00A75E90 /* OrderPriceView.swift */; };
 		18249D4D2AD12CC800A75E90 /* TotalView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18249D4C2AD12CC800A75E90 /* TotalView.swift */; };
 		18249D4F2AD1452900A75E90 /* BuyButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18249D4E2AD1452900A75E90 /* BuyButtonView.swift */; };
+		18249D552AD5014C00A75E90 /* TextFieldForNumberView .swift in Sources */ = {isa = PBXBuildFile; fileRef = 18249D542AD5014C00A75E90 /* TextFieldForNumberView .swift */; };
 		186BB18B2ACC0E1000533FB4 /* FlowerApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 186BB18A2ACC0E1000533FB4 /* FlowerApp.swift */; };
 		186BB18F2ACC0E1200533FB4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 186BB18E2ACC0E1200533FB4 /* Assets.xcassets */; };
 		186BB1922ACC0E1200533FB4 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 186BB1912ACC0E1200533FB4 /* Preview Assets.xcassets */; };
@@ -38,6 +39,7 @@
 		18249D4A2AD0358C00A75E90 /* OrderPriceView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrderPriceView.swift; sourceTree = "<group>"; };
 		18249D4C2AD12CC800A75E90 /* TotalView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TotalView.swift; sourceTree = "<group>"; };
 		18249D4E2AD1452900A75E90 /* BuyButtonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BuyButtonView.swift; sourceTree = "<group>"; };
+		18249D542AD5014C00A75E90 /* TextFieldForNumberView .swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "TextFieldForNumberView .swift"; sourceTree = "<group>"; };
 		186BB1872ACC0E1000533FB4 /* Flower.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Flower.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		186BB18A2ACC0E1000533FB4 /* FlowerApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlowerApp.swift; sourceTree = "<group>"; };
 		186BB18E2ACC0E1200533FB4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -167,6 +169,7 @@
 				186BB1BA2ACEB69400533FB4 /* PickerView.swift */,
 				186BB1BC2ACECE7C00533FB4 /* AddressView.swift */,
 				18F79C1F2ACFB6DD009657A9 /* TextFieldView.swift */,
+				18249D542AD5014C00A75E90 /* TextFieldForNumberView .swift */,
 				186BB1C02ACFB4E400533FB4 /* AdditionalInfoView.swift */,
 				18F79C232ACFD821009657A9 /* AddPostcardView.swift */,
 				18249D4A2AD0358C00A75E90 /* OrderPriceView.swift */,
@@ -285,6 +288,7 @@
 				18F79C322AD00A84009657A9 /* TimeChoiceView.swift in Sources */,
 				186BB1B42ACE83B600533FB4 /* Aid.swift in Sources */,
 				18F79C302AD008BE009657A9 /* DeliveryPicker.swift in Sources */,
+				18249D552AD5014C00A75E90 /* TextFieldForNumberView .swift in Sources */,
 				186BB1AF2ACE811900533FB4 /* CheckoutView.swift in Sources */,
 				186BB1BB2ACEB69400533FB4 /* PickerView.swift in Sources */,
 			);
