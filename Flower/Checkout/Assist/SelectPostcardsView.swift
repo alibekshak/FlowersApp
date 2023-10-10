@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-struct SelectPostcards: View {
+struct SelectPostcardsView: View {
     
     @State private var selectedImage: [String: Bool] = [
         "postcard1": false,
@@ -32,7 +32,7 @@ struct SelectPostcards: View {
     ]
     
     var body: some View {
-        VStack{
+        VStack(spacing: 16){
             Text(Aid.TextSelectPostcards().title)
                 .font(Font.system(size: 16, weight: .bold))
                 .foregroundColor(Aid.CheckoutColor().blackTextField)
@@ -73,17 +73,19 @@ struct SelectPostcards: View {
                     }
                     .onTapGesture {
                         isSelected.wrappedValue.toggle()
+                        
                     }
                 }
             }
+            ButtonForSelectPostcards()
         }
     }
 }
 
 
-struct SelectPostcards_Previews: PreviewProvider {
+struct SelectPostcardsView_Previews: PreviewProvider {
     static var previews: some View {
-        SelectPostcards()
+        SelectPostcardsView()
     }
 }
 

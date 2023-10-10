@@ -89,6 +89,7 @@ struct Aid{
         var postcard3 = "Открытка /n“Котик и сметана”"
         var postcard4 = "Открытка /n“Love is”"
         var postcard5 = "Открытка /n“Love is”"
+        var button = "Выбрать"
     }
     
 }
