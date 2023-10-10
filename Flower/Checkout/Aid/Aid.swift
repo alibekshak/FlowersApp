@@ -81,4 +81,13 @@ struct Aid{
         var moneyForTotal = "20 000 ₸"
     }
     
+    struct TextSelectPostcards{
+        var title = "Выбор открытки"
+        var postcard1 = "Открытка “Я люблю тебя”"
+        var postcard2 = "Открытка “Любимой маме”"
+        var postcard3 = "Открытка “Котик и сметана”"
+        var postcard4 = "Открытка “Love is”"
+        var postcard5 = "Открытка “Love is”"
+    }
+    
 }
