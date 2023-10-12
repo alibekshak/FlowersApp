@@ -10,7 +10,7 @@ struct TotalView: View {
             }
         }
 //        .font(Font.system(size: 16, weight: .bold))
-        .font(.custom("Inter-Thin", size: 12))
+        .font(.custom("Inter-Bold", size: 12))
         .foregroundColor(Aid.CheckoutColor().blackTextField)
         .padding([.top, .bottom])
     }
