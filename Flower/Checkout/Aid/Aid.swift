@@ -99,6 +99,6 @@ struct Aid{
     
     struct AddingAddressText{
         var title = "Введите адрес"
-        
+        var geolocation = "Поделиться геолокацией"
     }
 }

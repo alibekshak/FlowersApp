@@ -22,6 +22,7 @@ struct TextFieldForSearchAddress: View {
                     .frame(width: 16, height: 16)
                 TextField("", text: $text)
             }
+            .padding(.horizontal, 12)
         }
     }
 }

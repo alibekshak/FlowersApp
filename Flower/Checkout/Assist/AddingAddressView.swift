@@ -12,23 +12,22 @@ struct AddingAddressView: View {
     @State private var text: String = ""
     
     var body: some View {
-        NavigationView{
             ZStack{
                 Aid.CheckoutColor().backgroundColor
-                VStack{
+                VStack(spacing: 11){
                     TextFieldForSearchAddress(text: $text)
-                    HStack{
-                        Image("location")
-                            .resizable()
-                            .frame(width: 24, height: 24)
-                        Text("Поделиться геолокацией")
-                    }
+                    
+                    GeolocationView()
+                    
+                    Spacer()
                 }
+                .padding(.horizontal, 16)
+                .padding(.top, 8)
             }
-        }
-        .navigationBarTitle(Aid.AddingAddressText().title, displayMode: .inline)
-        .background(Aid.CheckoutColor().backgroundColor)
-        .navigationBarItems(leading: NavigationBarItemsButton())
+            .navigationBarTitle(Aid.AddingAddressText().title, displayMode: .inline)
+            .background(Aid.CheckoutColor().backgroundColor)
+            .navigationBarItems(leading: NavigationBarItemsButton())
+            .navigationBarBackButtonHidden(true)
     }
 }
 

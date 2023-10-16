@@ -6,7 +6,11 @@ struct AddressView: View {
             Text(Aid.CheckoutAddress().title)
                 .font(.title3)
                 .bold()
-            ButtonForNavigation(name: Aid.CheckoutAddress().textButton)
+            
+            NavigationLink(destination: AddingAddressView()){
+                ButtonForNavigation(name: Aid.CheckoutAddress().textButton)
+            }
+            
         }
         .padding([.top, .bottom], 5)
     }
