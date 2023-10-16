@@ -8,16 +8,18 @@ struct TextForFlower: View {
     var body: some View {
         VStack(spacing: 20){
             Text(textTitle)
-                .font(Font.system(size: 28, weight: .semibold))
+                .font(Font.titleOnboardingFont)
+                .foregroundColor(Color(StringConstant.BackgroundColors.generalTitles))
                 .multilineTextAlignment(.center)
                 .padding(.horizontal, 27)
             
             Text(textBody)
-                .font(Font.system(size: 17, weight: .light))
-                .foregroundColor(Auxiliary.OnboardingColor().gray)
+                .font(Font.textOnboardingFont)
+                .foregroundColor(Color(StringConstant.BackgroundColors.navigationTitleColor))
                 .multilineTextAlignment(.center)
         }
         .padding(.horizontal, 27)
+        .padding(.bottom, 30)
     }
 }
 

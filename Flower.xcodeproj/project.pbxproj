@@ -39,6 +39,8 @@
 		1897029D2ADCFF0E00F1C1E9 /* AddingAddressView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1897029C2ADCFF0E00F1C1E9 /* AddingAddressView.swift */; };
 		1897029F2ADD05D200F1C1E9 /* TextFieldForSearchAddress.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1897029E2ADD05D200F1C1E9 /* TextFieldForSearchAddress.swift */; };
 		189702A22ADD255E00F1C1E9 /* GeolocationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 189702A12ADD255E00F1C1E9 /* GeolocationView.swift */; };
+		189702A92ADD324F00F1C1E9 /* StringConstant.swift in Sources */ = {isa = PBXBuildFile; fileRef = 189702A82ADD324E00F1C1E9 /* StringConstant.swift */; };
+		189702AB2ADD329800F1C1E9 /* FontExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 189702AA2ADD329800F1C1E9 /* FontExtension.swift */; };
 		18F79C202ACFB6DD009657A9 /* TextFieldView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18F79C1F2ACFB6DD009657A9 /* TextFieldView.swift */; };
 		18F79C242ACFD821009657A9 /* AddPostcardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18F79C232ACFD821009657A9 /* AddPostcardView.swift */; };
 		18F79C282ACFFABA009657A9 /* ButtonForNavigation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18F79C272ACFFABA009657A9 /* ButtonForNavigation.swift */; };
@@ -81,6 +83,8 @@
 		1897029C2ADCFF0E00F1C1E9 /* AddingAddressView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddingAddressView.swift; sourceTree = "<group>"; };
 		1897029E2ADD05D200F1C1E9 /* TextFieldForSearchAddress.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextFieldForSearchAddress.swift; sourceTree = "<group>"; };
 		189702A12ADD255E00F1C1E9 /* GeolocationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GeolocationView.swift; sourceTree = "<group>"; };
+		189702A82ADD324E00F1C1E9 /* StringConstant.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StringConstant.swift; sourceTree = "<group>"; };
+		189702AA2ADD329800F1C1E9 /* FontExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FontExtension.swift; sourceTree = "<group>"; };
 		18F79C1F2ACFB6DD009657A9 /* TextFieldView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextFieldView.swift; sourceTree = "<group>"; };
 		18F79C232ACFD821009657A9 /* AddPostcardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddPostcardView.swift; sourceTree = "<group>"; };
 		18F79C272ACFFABA009657A9 /* ButtonForNavigation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonForNavigation.swift; sourceTree = "<group>"; };
@@ -193,6 +197,8 @@
 			children = (
 				186BB1B32ACE83B600533FB4 /* Aid.swift */,
 				186BB1B82ACEB3A200533FB4 /* EntityType.swift */,
+				189702A82ADD324E00F1C1E9 /* StringConstant.swift */,
+				189702AA2ADD329800F1C1E9 /* FontExtension.swift */,
 			);
 			path = Aid;
 			sourceTree = "<group>";
@@ -331,6 +337,7 @@
 				1897029F2ADD05D200F1C1E9 /* TextFieldForSearchAddress.swift in Sources */,
 				186BB1A82ACC5F9E00533FB4 /* ButtonForLastOnboarding.swift in Sources */,
 				186BB1B72ACEABFF00533FB4 /* NavigationBarItemsButton.swift in Sources */,
+				189702AB2ADD329800F1C1E9 /* FontExtension.swift in Sources */,
 				186BB1AC2ACD57DB00533FB4 /* OnboardingView.swift in Sources */,
 				186BB1C12ACFB4E400533FB4 /* AdditionalInfoView.swift in Sources */,
 				186BB1AA2ACD3A6400533FB4 /* DotsIndexView.swift in Sources */,
@@ -338,6 +345,7 @@
 				18249D592AD5864700A75E90 /* ButtonForSelectPostcards.swift in Sources */,
 				18249D4B2AD0358C00A75E90 /* OrderPriceView.swift in Sources */,
 				186BB1BD2ACECE7C00533FB4 /* AddressView.swift in Sources */,
+				189702A92ADD324F00F1C1E9 /* StringConstant.swift in Sources */,
 				18249D4F2AD1452900A75E90 /* BuyButtonView.swift in Sources */,
 				186BB18B2ACC0E1000533FB4 /* FlowerApp.swift in Sources */,
 				186BB1A12ACC2C9C00533FB4 /* ButtonsForFlower.swift in Sources */,

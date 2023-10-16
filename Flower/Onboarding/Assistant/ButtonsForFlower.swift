@@ -13,8 +13,8 @@ struct ButtonsForFlower: View {
                 
             }) {
                 Text(Auxiliary.TextForButtons().textSkipButton)
-                    .font(Font.system(size: 18, weight: .semibold))
-                    .foregroundColor(Auxiliary.OnboardingColor().gray)
+                    .font(Font.textButtonForFlower)
+                    .foregroundColor(Color(StringConstant.BackgroundColors.navigationTitleColor))
             }
             
             Spacer()
@@ -23,11 +23,11 @@ struct ButtonsForFlower: View {
                 ZStack{
                     RoundedRectangle(cornerRadius: 60)
                         .frame(width: buttonWidth, height: buttonHeight)
-                        .foregroundColor(Auxiliary.OnboardingColor().gray)
+                        .foregroundColor(Color(StringConstant.BackgroundColors.darkButton))
                     
                     Text(Auxiliary.TextForButtons().textNextButton)
-                        .foregroundColor(Color.white)
-                        .font(.system(size: 18, weight: .semibold))
+                        .foregroundColor(Color(StringConstant.BackgroundColors.buttonTitle))
+                        .font(Font.textButtonForFlower)
                 }
             }
         }
