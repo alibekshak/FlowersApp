@@ -33,12 +33,11 @@ struct AddPostcardView: View {
                     ButtonForNavigation(name: Aid.TextForPostcard().wish)
                         .sheet(isPresented: $isWishesPresented){
                             WishesView()
-                                .presentationDetents([.medium, .large])
+                                .presentationDetents([.height(327), .medium, .large])
                                 .transition(.opacity)
                         }
                 }
-                
-                
+    
             }
         }
         .padding([.top, .bottom], 10)

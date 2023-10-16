@@ -94,5 +94,6 @@ struct Aid{
     
     struct WishesViewText{
         var title = "Напишите пожелания"
+        var buttonName = "Сохранить"
     }
 }

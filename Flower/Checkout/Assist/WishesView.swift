@@ -20,7 +20,7 @@ struct WishesView: View {
                 .padding()
                 .background(RoundedRectangle(cornerRadius: 16).stroke(Color.gray, lineWidth: 1))
             
-            
+            ButtonForWishesView()
         }
         .padding()
     }
@@ -47,8 +47,8 @@ struct MultiLineTF: UIViewRepresentable {
         tview.isUserInteractionEnabled = true
         tview.isScrollEnabled = true
         tview.text = text
-        tview.textColor = .gray
-        tview.font = .systemFont(ofSize: 20)
+        tview.textColor = .black
+        tview.font = .systemFont(ofSize: 16)
         tview.delegate = context.coordinator
         return tview
     }
