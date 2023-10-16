@@ -96,4 +96,9 @@ struct Aid{
         var title = "Напишите пожелания"
         var buttonName = "Сохранить"
     }
+    
+    struct AddingAddressText{
+        var title = "Введите адрес"
+        
+    }
 }

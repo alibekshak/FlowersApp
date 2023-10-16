@@ -36,6 +36,8 @@
 		186BB1C12ACFB4E400533FB4 /* AdditionalInfoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 186BB1C02ACFB4E400533FB4 /* AdditionalInfoView.swift */; };
 		189702992ADCDF4200F1C1E9 /* WishesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 189702982ADCDF4200F1C1E9 /* WishesView.swift */; };
 		1897029B2ADCF45D00F1C1E9 /* ButtonForWishesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1897029A2ADCF45D00F1C1E9 /* ButtonForWishesView.swift */; };
+		1897029D2ADCFF0E00F1C1E9 /* AddingAddressView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1897029C2ADCFF0E00F1C1E9 /* AddingAddressView.swift */; };
+		1897029F2ADD05D200F1C1E9 /* TextFieldForSearchAddress.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1897029E2ADD05D200F1C1E9 /* TextFieldForSearchAddress.swift */; };
 		18F79C202ACFB6DD009657A9 /* TextFieldView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18F79C1F2ACFB6DD009657A9 /* TextFieldView.swift */; };
 		18F79C242ACFD821009657A9 /* AddPostcardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18F79C232ACFD821009657A9 /* AddPostcardView.swift */; };
 		18F79C282ACFFABA009657A9 /* ButtonForNavigation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18F79C272ACFFABA009657A9 /* ButtonForNavigation.swift */; };
@@ -75,6 +77,8 @@
 		186BB1C02ACFB4E400533FB4 /* AdditionalInfoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdditionalInfoView.swift; sourceTree = "<group>"; };
 		189702982ADCDF4200F1C1E9 /* WishesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WishesView.swift; sourceTree = "<group>"; };
 		1897029A2ADCF45D00F1C1E9 /* ButtonForWishesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonForWishesView.swift; sourceTree = "<group>"; };
+		1897029C2ADCFF0E00F1C1E9 /* AddingAddressView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddingAddressView.swift; sourceTree = "<group>"; };
+		1897029E2ADD05D200F1C1E9 /* TextFieldForSearchAddress.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextFieldForSearchAddress.swift; sourceTree = "<group>"; };
 		18F79C1F2ACFB6DD009657A9 /* TextFieldView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextFieldView.swift; sourceTree = "<group>"; };
 		18F79C232ACFD821009657A9 /* AddPostcardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddPostcardView.swift; sourceTree = "<group>"; };
 		18F79C272ACFFABA009657A9 /* ButtonForNavigation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonForNavigation.swift; sourceTree = "<group>"; };
@@ -206,6 +210,8 @@
 				18249D4C2AD12CC800A75E90 /* TotalView.swift */,
 				18249D562AD5138C00A75E90 /* SelectPostcardsView.swift */,
 				189702982ADCDF4200F1C1E9 /* WishesView.swift */,
+				1897029C2ADCFF0E00F1C1E9 /* AddingAddressView.swift */,
+				1897029E2ADD05D200F1C1E9 /* TextFieldForSearchAddress.swift */,
 			);
 			path = Assist;
 			sourceTree = "<group>";
@@ -311,6 +317,7 @@
 				189702992ADCDF4200F1C1E9 /* WishesView.swift in Sources */,
 				186BB1A42ACC2DD100533FB4 /* Auxiliary.swift in Sources */,
 				18F79C202ACFB6DD009657A9 /* TextFieldView.swift in Sources */,
+				1897029F2ADD05D200F1C1E9 /* TextFieldForSearchAddress.swift in Sources */,
 				186BB1A82ACC5F9E00533FB4 /* ButtonForLastOnboarding.swift in Sources */,
 				186BB1B72ACEABFF00533FB4 /* NavigationBarItemsButton.swift in Sources */,
 				186BB1AC2ACD57DB00533FB4 /* OnboardingView.swift in Sources */,
@@ -332,6 +339,7 @@
 				18F79C302AD008BE009657A9 /* DeliveryPicker.swift in Sources */,
 				18249D552AD5014C00A75E90 /* TextFieldForNumberView .swift in Sources */,
 				186BB1AF2ACE811900533FB4 /* CheckoutView.swift in Sources */,
+				1897029D2ADCFF0E00F1C1E9 /* AddingAddressView.swift in Sources */,
 				186BB1BB2ACEB69400533FB4 /* PickerView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
