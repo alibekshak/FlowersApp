@@ -13,7 +13,7 @@ struct AddingAddressView: View {
     
     var body: some View {
             ZStack{
-                Aid.CheckoutColor().backgroundColor
+                Color(StringConstant.BackgroundColors.mainColor)
                 VStack(spacing: 11){
                     TextFieldForSearchAddress(text: $text)
                     
@@ -25,7 +25,7 @@ struct AddingAddressView: View {
                 .padding(.top, 8)
             }
             .navigationBarTitle(Aid.AddingAddressText().title, displayMode: .inline)
-            .background(Aid.CheckoutColor().backgroundColor)
+            .background( Color(StringConstant.BackgroundColors.mainColor))
             .navigationBarItems(leading: NavigationBarItemsButton())
             .navigationBarBackButtonHidden(true)
     }

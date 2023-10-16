@@ -8,17 +8,17 @@ struct ButtonForNavigation: View {
         ZStack{
             RoundedRectangle(cornerRadius: 20)
                 .frame(height: 56)
-                .foregroundColor(Aid.CheckoutColor().white)
+                .foregroundColor(Color(StringConstant.BackgroundColors.sheetColor))
             HStack{
                 Text(name)
-                    .font(Font.system(size: 16, weight: .medium))
-                    .foregroundColor(Aid.CheckoutColor().blackTextField)
+                    .font(Font.nameNavigation)
+                    .foregroundColor(Color(StringConstant.BackgroundColors.generalTitles))
                 
                 Spacer()
                 
                 Image(systemName: Aid.CheckoutChevrons().chevronRight)
-                    .foregroundColor(Aid.CheckoutColor().black)
-                    .font(Font.system(size: 16, weight: .semibold))
+                    .foregroundColor(Color(StringConstant.BackgroundColors.generalTitles))
+                    .font(Font.fontForImage)
             }
             .padding(.horizontal, 16)
         }

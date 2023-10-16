@@ -18,15 +18,15 @@ struct TextFieldForNumberView: View {
         ZStack{
             RoundedRectangle(cornerRadius: 20)
                 .frame(height: 58)
-                .foregroundColor(Aid.CheckoutColor().white)
+                .foregroundColor(Color(StringConstant.BackgroundColors.sheetColor))
             
             VStack(alignment: .leading, spacing: 1){
                 Text(nameOfField)
-                    .foregroundColor(Aid.CheckoutColor().grayTextField)
-                    .font(Font.system(size: 12, weight: .medium))
+                    .foregroundColor(Color(StringConstant.BackgroundColors.additionalInfoColor))
+                    .font(Font.nameTextFieldFont)
                 
                 TextField("", text: $score)
-                    .foregroundColor(Aid.CheckoutColor().blackTextField)
+                    .foregroundColor(Color(StringConstant.BackgroundColors.navigationTitleColor))
                     .keyboardType(.numberPad)
                     .onReceive(Just(score)){ newValue in
                         let filtered = newValue.filter{ "0123456789".contains($0) }

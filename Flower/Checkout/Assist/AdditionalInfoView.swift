@@ -16,7 +16,7 @@ struct AdditionalInfoView: View {
     var body: some View {
         VStack(alignment: .leading, spacing: 12){
             Text(Aid.CheckoutNameOfBlock().addInfo)
-                .font(.title3)
+                .font(Font.titelsCheckoutFont)
                 .bold()
             
             VStack{

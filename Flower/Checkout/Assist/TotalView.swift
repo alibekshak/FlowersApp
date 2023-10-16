@@ -10,8 +10,8 @@ struct TotalView: View {
             }
         }
 //        .font(Font.system(size: 16, weight: .bold))
-        .font(.custom("Inter-Bold", size: 12))
-        .foregroundColor(Aid.CheckoutColor().blackTextField)
+        .font(Font.totalViewFont)
+        .foregroundColor(Color(StringConstant.BackgroundColors.generalTitles))
         .padding([.top, .bottom])
     }
 }

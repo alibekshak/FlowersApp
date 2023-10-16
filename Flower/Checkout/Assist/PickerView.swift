@@ -10,11 +10,11 @@ struct PickerView: View {
                 ZStack{
                     RoundedRectangle(cornerRadius: 12)
                         .frame(height: 32)
-                        .foregroundColor(selectedEntityType == type ? Aid.CheckoutColor().pink : Aid.CheckoutColor().white)
+                        .foregroundColor(selectedEntityType == type ? Color(StringConstant.BackgroundColors.selectedColor) : Color(StringConstant.BackgroundColors.sheetColor))
                     
                     Text(type.name())
-                        .foregroundColor(selectedEntityType == type ? Aid.CheckoutColor().white : Aid.CheckoutColor().gray)
-                        .font(.system(size: 16, weight: .semibold))
+                        .foregroundColor(selectedEntityType == type ? Color(StringConstant.BackgroundColors.buttonTitle) : Color(StringConstant.BackgroundColors.pickerTextColor))
+                        .font(Font.namePickerFont)
                 }
                 .onTapGesture {
                     selectedEntityType = type
@@ -28,4 +28,8 @@ struct PickerView: View {
         
     }
 }
-
+struct PickerView_Preview: PreviewProvider{
+    static var previews: some View{
+        PickerView(selectedEntityType: .constant(EntityType.delivery))
+    }
+}

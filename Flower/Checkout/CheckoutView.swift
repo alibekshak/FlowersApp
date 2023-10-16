@@ -9,7 +9,7 @@ struct CheckoutView: View {
         NavigationView{
             ScrollView(showsIndicators: false){
                 ZStack{
-                    Aid.CheckoutColor().backgroundColor
+                    Color(StringConstant.BackgroundColors.mainColor)
                     
                     VStack{
                         Group{
@@ -48,7 +48,7 @@ struct CheckoutView: View {
                 }
             }
             .navigationBarTitle(Aid.CheckoutNameOfBlock().navigationName, displayMode: .inline)
-            .background(Aid.CheckoutColor().backgroundColor)
+            .background(Color(StringConstant.BackgroundColors.mainColor))
             .navigationBarItems(leading: NavigationBarItemsButton())
         }
         .onChange(of: selectedEntityType){ newValue in

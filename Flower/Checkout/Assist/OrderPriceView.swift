@@ -4,8 +4,7 @@ struct OrderPriceView: View {
     var body: some View {
         VStack(alignment: .leading){
             Text(Aid.CheckoutNameOfBlock().orderPrice)
-                .font(.title3)
-                .bold()
+                .font(Font.titelsCheckoutFont)
             HStack{
 
                 VStack(alignment: .leading,spacing: 16){
@@ -22,7 +21,7 @@ struct OrderPriceView: View {
                     Text(Aid.TextForOrderPrice().moneyForDelivery)
                 }
             }
-            .font(Font.system(size: 14, weight: .medium))
+            .font(Font.orderPriceFont)
             .padding([.top, .bottom])
         }
     }

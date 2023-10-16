@@ -30,5 +30,7 @@ struct StringConstant{
         static let sheetColor = "SheetBackground"
         static let darkButton = "ForDarkButtonColor"
         static let stroke = "Stroke"
+        static let pickerTextColor = "PickerTextColor"
+        static let geolocationTextColor = "GeolocationTextColor"
     }
 }

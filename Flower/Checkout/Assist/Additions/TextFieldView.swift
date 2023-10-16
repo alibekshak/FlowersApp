@@ -10,15 +10,15 @@ struct TextFieldView: View {
             ZStack{
                 RoundedRectangle(cornerRadius: 20)
                     .frame(height: 58)
-                    .foregroundColor(Aid.CheckoutColor().white)
+                    .foregroundColor(Color(StringConstant.BackgroundColors.sheetColor))
                 
                 VStack(alignment: .leading, spacing: 1){
                     Text(nameOfField)
-                        .foregroundColor(Aid.CheckoutColor().grayTextField)
-                        .font(Font.system(size: 12, weight: .medium))
+                        .foregroundColor(Color(StringConstant.BackgroundColors.additionalInfoColor))
+                        .font(Font.nameTextFieldFont)
                     
                     TextField("", text: $text)
-                        .foregroundColor(Aid.CheckoutColor().blackTextField)
+                        .foregroundColor(Color(StringConstant.BackgroundColors.navigationTitleColor))
                 }
                 .padding(.horizontal, 20)
             }

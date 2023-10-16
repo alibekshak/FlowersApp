@@ -14,7 +14,7 @@ struct TextFieldForSearchAddress: View {
     var body: some View {
         ZStack{
             RoundedRectangle(cornerRadius: 16)
-                .fill(Color.white)
+                .fill(Color(StringConstant.BackgroundColors.sheetColor))
                 .frame(height: 48)
             HStack(spacing: 9){
                 Image("Search")

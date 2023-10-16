@@ -4,8 +4,7 @@ struct AddressView: View {
     var body: some View {
         VStack(alignment: .leading){
             Text(Aid.CheckoutAddress().title)
-                .font(.title3)
-                .bold()
+                .font(Font.titelsCheckoutFont)
             
             NavigationLink(destination: AddingAddressView()){
                 ButtonForNavigation(name: Aid.CheckoutAddress().textButton)

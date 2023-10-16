@@ -19,6 +19,8 @@ struct GeolocationView: View {
                     .resizable()
                     .frame(width: 24, height: 24)
                 Text(Aid.AddingAddressText().geolocation)
+                    .font(Font.textGeolocationFont)
+                    .foregroundColor(Color(StringConstant.BackgroundColors.geolocationTextColor))
             }
         }
     }

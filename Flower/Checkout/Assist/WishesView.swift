@@ -15,10 +15,11 @@ struct WishesView: View {
     var body: some View {
         VStack(spacing: 16){
             Text(Aid.WishesViewText().title)
+                .font(Font.titelsCheckoutFont)
             
             MultiLineTF(text: $text)
                 .padding()
-                .background(RoundedRectangle(cornerRadius: 16).stroke(Color.gray, lineWidth: 1))
+                .background(RoundedRectangle(cornerRadius: 16).stroke(Color(StringConstant.BackgroundColors.additionalInfoColor), lineWidth: 1))
             
             ButtonForWishesView()
         }

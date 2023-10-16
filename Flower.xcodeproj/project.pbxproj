@@ -41,6 +41,7 @@
 		189702A22ADD255E00F1C1E9 /* GeolocationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 189702A12ADD255E00F1C1E9 /* GeolocationView.swift */; };
 		189702A92ADD324F00F1C1E9 /* StringConstant.swift in Sources */ = {isa = PBXBuildFile; fileRef = 189702A82ADD324E00F1C1E9 /* StringConstant.swift */; };
 		189702AB2ADD329800F1C1E9 /* FontExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 189702AA2ADD329800F1C1E9 /* FontExtension.swift */; };
+		189702AD2ADD436700F1C1E9 /* Roboto-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 189702AC2ADD436000F1C1E9 /* Roboto-Medium.ttf */; };
 		18F79C202ACFB6DD009657A9 /* TextFieldView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18F79C1F2ACFB6DD009657A9 /* TextFieldView.swift */; };
 		18F79C242ACFD821009657A9 /* AddPostcardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18F79C232ACFD821009657A9 /* AddPostcardView.swift */; };
 		18F79C282ACFFABA009657A9 /* ButtonForNavigation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18F79C272ACFFABA009657A9 /* ButtonForNavigation.swift */; };
@@ -85,6 +86,7 @@
 		189702A12ADD255E00F1C1E9 /* GeolocationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GeolocationView.swift; sourceTree = "<group>"; };
 		189702A82ADD324E00F1C1E9 /* StringConstant.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StringConstant.swift; sourceTree = "<group>"; };
 		189702AA2ADD329800F1C1E9 /* FontExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FontExtension.swift; sourceTree = "<group>"; };
+		189702AC2ADD436000F1C1E9 /* Roboto-Medium.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Roboto-Medium.ttf"; sourceTree = "<group>"; };
 		18F79C1F2ACFB6DD009657A9 /* TextFieldView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextFieldView.swift; sourceTree = "<group>"; };
 		18F79C232ACFD821009657A9 /* AddPostcardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddPostcardView.swift; sourceTree = "<group>"; };
 		18F79C272ACFFABA009657A9 /* ButtonForNavigation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonForNavigation.swift; sourceTree = "<group>"; };
@@ -110,6 +112,7 @@
 				18249D5E2AD59B6C00A75E90 /* Inter-Light.ttf */,
 				18249D622AD59B6C00A75E90 /* Inter-Medium.ttf */,
 				18249D632AD59B6D00A75E90 /* Inter-Regular.ttf */,
+				189702AC2ADD436000F1C1E9 /* Roboto-Medium.ttf */,
 			);
 			path = Font;
 			sourceTree = "<group>";
@@ -315,6 +318,7 @@
 				18249D6A2AD59BB100A75E90 /* Inter-Regular.ttf in Resources */,
 				186BB1922ACC0E1200533FB4 /* Preview Assets.xcassets in Resources */,
 				18249D692AD59BAE00A75E90 /* Inter-Medium.ttf in Resources */,
+				189702AD2ADD436700F1C1E9 /* Roboto-Medium.ttf in Resources */,
 				18249D652AD59BA000A75E90 /* Inter-Bold.ttf in Resources */,
 				186BB18F2ACC0E1200533FB4 /* Assets.xcassets in Resources */,
 				18249D682AD59BAA00A75E90 /* Inter-Light.ttf in Resources */,

@@ -18,11 +18,11 @@ struct ButtonForSelectPostcards: View {
             ZStack{
                 RoundedRectangle(cornerRadius: 78)
                     .frame(height: 56)
-                    .foregroundColor(Aid.CheckoutColor().pink)
+                    .foregroundColor(Color(StringConstant.BackgroundColors.selectedColor))
                 
                 Text(Aid.TextSelectPostcards().button)
-                    .foregroundColor(Aid.CheckoutColor().white)
-                    .font(Font.system(size: 18, weight: .bold))
+                    .foregroundColor(Color(StringConstant.BackgroundColors.buttonTitle))
+                    .font(Font.titelsCheckoutFont)
             }
         }
         .padding(.horizontal)

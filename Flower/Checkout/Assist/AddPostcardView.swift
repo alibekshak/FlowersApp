@@ -8,8 +8,7 @@ struct AddPostcardView: View {
     var body: some View {
         VStack(alignment: .leading, spacing: 12){
             Text(Aid.CheckoutNameOfBlock().addPostcard)
-                .font(.title3)
-                .bold()
+                .font(Font.titelsCheckoutFont)
             VStack(spacing: 8){
                 
                 Button(action: {

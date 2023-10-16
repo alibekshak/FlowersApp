@@ -9,8 +9,7 @@ struct TimeChoiceView: View {
     var body: some View {
         VStack(alignment: .leading){
                 Text(Aid.CheckoutNameOfBlock().timeDelivery)
-                    .font(.title3)
-                    .bold()
+                .font(Font.titelsCheckoutFont)
             
             Button(action: {
                 self.isSheetPresented.toggle()
@@ -18,7 +17,7 @@ struct TimeChoiceView: View {
                 ZStack {
                     RoundedRectangle(cornerRadius: 78)
                         .frame(height: 56)
-                        .foregroundColor( Aid.CheckoutColor().pink)
+                        .foregroundColor(Color(StringConstant.BackgroundColors.selectedColor))
                     
                     HStack {
                         ZStack {
@@ -33,8 +32,8 @@ struct TimeChoiceView: View {
                             
                             Text("\(formattedDate(selectedDate))")
                         }
-                        .foregroundColor( Aid.CheckoutColor().white)
-                        .font(Font.system(size: 17, weight: .medium))
+                        .foregroundColor(Color(StringConstant.BackgroundColors.buttonTitle))
+                        .font(Font.timeButtonTextFont)
                     }
                 }
                 .padding([.top, .bottom], 5)

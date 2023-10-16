@@ -62,14 +62,14 @@ struct SelectPostcardsView: View {
                             .overlay(
                                 RoundedRectangle(cornerRadius: 16)
                                     .inset(by: isSelected.wrappedValue ? 1.5 : 0)
-                                    .stroke(Aid.CheckoutColor().pink, lineWidth: isSelected.wrappedValue ? 3 : 0)
+                                    .stroke(Color(StringConstant.BackgroundColors.selectedColor), lineWidth: isSelected.wrappedValue ? 3 : 0)
                             )
                         
                         Text(textForPostcards[index])
-                            .font(Font.system(size: 10, weight: .medium))
+                            .font(Font.textPostcardsFont)
                             .multilineTextAlignment(.center)
-                            .foregroundColor(Aid.CheckoutColor().Grey80)
-                            .frame(width: 110, height: 25, alignment: .top)
+                            .foregroundColor(Color(StringConstant.BackgroundColors.navigationTitleColor))
+                            .frame(alignment: .top)
                     }
                     .onTapGesture {
                         isSelected.wrappedValue.toggle()

@@ -32,10 +32,10 @@ struct DeliveryPicker: View {
                 ZStack{
                     RoundedRectangle(cornerRadius: 20)
                         .frame(width: 327,height: 56)
-                        .foregroundColor(Aid.CheckoutColor().pink)
+                        .foregroundColor(Color(StringConstant.BackgroundColors.selectedColor))
                     Text(Aid.DeliveryPicker().text)
                         .font(Font.system(size: 16, weight: .bold))
-                        .foregroundColor(Aid.CheckoutColor().white)
+                        .foregroundColor(Color(StringConstant.BackgroundColors.buttonTitle))
                 }
                 .padding()
             }

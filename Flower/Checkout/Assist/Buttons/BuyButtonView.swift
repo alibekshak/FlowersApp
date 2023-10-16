@@ -8,11 +8,11 @@ struct BuyButtonView: View {
             ZStack{
                 RoundedRectangle(cornerRadius: 78)
                     .frame(height: 56)
-                    .foregroundColor(Aid.CheckoutColor().blackTextField)
+                    .foregroundColor(Color(StringConstant.BackgroundColors.darkButton))
                 
                 Text(Aid.TextForBuyButton().buy)
-                    .foregroundColor(Aid.CheckoutColor().white)
-                    .font(Font.system(size: 18, weight: .bold))
+                    .foregroundColor(Color(StringConstant.BackgroundColors.buttonTitle))
+                    .font(Font.titelsCheckoutFont)
             }
         }
     }

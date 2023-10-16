@@ -20,6 +20,7 @@ public enum Fonts: String {
     case montserratBold = "Montserrat-Bold"
     case sFProDisplay = "SF Pro Display"
     case montserratSemiBold = "Montserrat-SemiBold"
+    case robotoMedium = "Roboto-Medium"
     
 }
 
@@ -46,4 +47,52 @@ extension Font{
         return .custom(.interBold, size: 16)
     }
     
+    //MARK: Checkout
+    static var titelsCheckoutFont: Font {
+        return .custom(.interBold, size: 16)
+    }
+    
+    //MARK: CheckoutPickerView
+    static var namePickerFont: Font{
+        return .custom(.robotoMedium, size: 14)
+    }
+    
+    //MARK: ButtonForNavigation
+    static var nameNavigation: Font {
+        return .custom(.interMedium, size: 14)
+    }
+    
+    static var fontForImage: Font{
+        return Font.system(size: 16, weight: .semibold)
+    }
+    
+    //MARK: TextField
+    static var nameTextFieldFont: Font{
+        return .custom(.interMedium, size: 12)
+    }
+    
+    //MARK: GeolocationView
+    static var textGeolocationFont: Font{
+        return .custom(.interMedium, size: 14)
+    }
+    
+    //MARK: OrderPriceView
+    static var orderPriceFont: Font{
+        return .custom(.interMedium, size: 14)
+    }
+    
+    //MARK: TotalView
+    static var totalViewFont: Font{
+        return .custom(.interBold, size: 12)
+    }
+    
+    //MARK: SelectPostcardsView
+    static var textPostcardsFont: Font{
+        return .custom(.interMedium, size: 12)
+    }
+    
+    //MARK: TimeChoiceView
+    static var timeButtonTextFont: Font{
+        return .custom(.interMedium, size: 16)
+    }
 }
