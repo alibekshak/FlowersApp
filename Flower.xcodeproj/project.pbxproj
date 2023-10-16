@@ -34,6 +34,7 @@
 		186BB1BB2ACEB69400533FB4 /* PickerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 186BB1BA2ACEB69400533FB4 /* PickerView.swift */; };
 		186BB1BD2ACECE7C00533FB4 /* AddressView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 186BB1BC2ACECE7C00533FB4 /* AddressView.swift */; };
 		186BB1C12ACFB4E400533FB4 /* AdditionalInfoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 186BB1C02ACFB4E400533FB4 /* AdditionalInfoView.swift */; };
+		189702992ADCDF4200F1C1E9 /* WishesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 189702982ADCDF4200F1C1E9 /* WishesView.swift */; };
 		18F79C202ACFB6DD009657A9 /* TextFieldView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18F79C1F2ACFB6DD009657A9 /* TextFieldView.swift */; };
 		18F79C242ACFD821009657A9 /* AddPostcardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18F79C232ACFD821009657A9 /* AddPostcardView.swift */; };
 		18F79C282ACFFABA009657A9 /* ButtonForNavigation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18F79C272ACFFABA009657A9 /* ButtonForNavigation.swift */; };
@@ -71,6 +72,7 @@
 		186BB1BA2ACEB69400533FB4 /* PickerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PickerView.swift; sourceTree = "<group>"; };
 		186BB1BC2ACECE7C00533FB4 /* AddressView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddressView.swift; sourceTree = "<group>"; };
 		186BB1C02ACFB4E400533FB4 /* AdditionalInfoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdditionalInfoView.swift; sourceTree = "<group>"; };
+		189702982ADCDF4200F1C1E9 /* WishesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WishesView.swift; sourceTree = "<group>"; };
 		18F79C1F2ACFB6DD009657A9 /* TextFieldView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextFieldView.swift; sourceTree = "<group>"; };
 		18F79C232ACFD821009657A9 /* AddPostcardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddPostcardView.swift; sourceTree = "<group>"; };
 		18F79C272ACFFABA009657A9 /* ButtonForNavigation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonForNavigation.swift; sourceTree = "<group>"; };
@@ -201,6 +203,7 @@
 				18249D4A2AD0358C00A75E90 /* OrderPriceView.swift */,
 				18249D4C2AD12CC800A75E90 /* TotalView.swift */,
 				18249D562AD5138C00A75E90 /* SelectPostcardsView.swift */,
+				189702982ADCDF4200F1C1E9 /* WishesView.swift */,
 			);
 			path = Assist;
 			sourceTree = "<group>";
@@ -302,6 +305,7 @@
 				18249D572AD5138C00A75E90 /* SelectPostcardsView.swift in Sources */,
 				186BB19D2ACC2BF100533FB4 /* ImageForFlower.swift in Sources */,
 				18F79C282ACFFABA009657A9 /* ButtonForNavigation.swift in Sources */,
+				189702992ADCDF4200F1C1E9 /* WishesView.swift in Sources */,
 				186BB1A42ACC2DD100533FB4 /* Auxiliary.swift in Sources */,
 				18F79C202ACFB6DD009657A9 /* TextFieldView.swift in Sources */,
 				186BB1A82ACC5F9E00533FB4 /* ButtonForLastOnboarding.swift in Sources */,

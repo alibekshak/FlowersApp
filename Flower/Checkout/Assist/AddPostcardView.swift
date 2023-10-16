@@ -3,6 +3,7 @@ import SwiftUI
 struct AddPostcardView: View {
     
     @State private var isSheetPresented = false
+    @State private var isWishesPresented = false
     
     var body: some View {
         VStack(alignment: .leading, spacing: 12){
@@ -10,6 +11,7 @@ struct AddPostcardView: View {
                 .font(.title3)
                 .bold()
             VStack(spacing: 8){
+                
                 Button(action: {
                     withAnimation{
                         self.isSheetPresented.toggle()
@@ -23,7 +25,20 @@ struct AddPostcardView: View {
                         }
                 }
                 
-                ButtonForNavigation(name: Aid.TextForPostcard().wish)
+                Button(action: {
+                    withAnimation{
+                        self.isWishesPresented.toggle()
+                    }
+                }){
+                    ButtonForNavigation(name: Aid.TextForPostcard().wish)
+                        .sheet(isPresented: $isWishesPresented){
+                            WishesView()
+                                .presentationDetents([.medium, .large])
+                                .transition(.opacity)
+                        }
+                }
+                
+                
             }
         }
         .padding([.top, .bottom], 10)

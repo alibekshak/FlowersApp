@@ -92,4 +92,7 @@ struct Aid{
         var button = "Выбрать"
     }
     
+    struct WishesViewText{
+        var title = "Напишите пожелания"
+    }
 }
