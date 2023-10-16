@@ -9,8 +9,7 @@ struct TotalView: View {
                 Text(Aid.TextForTotal().moneyForTotal)
             }
         }
-//        .font(Font.system(size: 16, weight: .bold))
-        .font(Font.totalViewFont)
+        .font(Font.titelsCheckoutFont)
         .foregroundColor(Color(StringConstant.BackgroundColors.generalTitles))
         .padding([.top, .bottom])
     }
