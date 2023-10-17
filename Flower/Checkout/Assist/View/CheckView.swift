@@ -8,6 +8,7 @@
 import SwiftUI
 
 struct CheckView: View {
+    
     var body: some View {
         NavigationView{
             ScrollView(showsIndicators: false){
@@ -44,7 +45,7 @@ struct CheckView: View {
             }
             .navigationBarTitle(Aid.CheckViewText().title, displayMode: .inline)
             .background( Color(StringConstant.BackgroundColors.mainColor))
-            .navigationBarItems(leading: NavigationBarItemsButton(), trailing: Image("share"))
+            .navigationBarItems(leading: NavigationBarItemsButton(), trailing: ShareButtonView())
             .navigationBarBackButtonHidden(true)
         }
     }

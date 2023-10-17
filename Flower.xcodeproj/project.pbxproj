@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		181955BB2ADE94BA003857F6 /* ControllView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 181955BA2ADE94BA003857F6 /* ControllView.swift */; };
 		18249D4B2AD0358C00A75E90 /* OrderPriceView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18249D4A2AD0358C00A75E90 /* OrderPriceView.swift */; };
 		18249D4D2AD12CC800A75E90 /* TotalView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18249D4C2AD12CC800A75E90 /* TotalView.swift */; };
 		18249D4F2AD1452900A75E90 /* ButtonCheckoutView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18249D4E2AD1452900A75E90 /* ButtonCheckoutView.swift */; };
@@ -45,6 +46,7 @@
 		189702BB2ADE45F200F1C1E9 /* CustomerSellerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 189702BA2ADE45F200F1C1E9 /* CustomerSellerView.swift */; };
 		189702BD2ADE485300F1C1E9 /* InfoPaymentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 189702BC2ADE485300F1C1E9 /* InfoPaymentView.swift */; };
 		189702BF2ADE51DA00F1C1E9 /* PaidView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 189702BE2ADE51DA00F1C1E9 /* PaidView.swift */; };
+		189702C32ADE7D1400F1C1E9 /* ShareButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 189702C22ADE7D1400F1C1E9 /* ShareButtonView.swift */; };
 		18F79C202ACFB6DD009657A9 /* TextFieldView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18F79C1F2ACFB6DD009657A9 /* TextFieldView.swift */; };
 		18F79C242ACFD821009657A9 /* AddPostcardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18F79C232ACFD821009657A9 /* AddPostcardView.swift */; };
 		18F79C282ACFFABA009657A9 /* ButtonForNavigation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18F79C272ACFFABA009657A9 /* ButtonForNavigation.swift */; };
@@ -53,6 +55,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		181955BA2ADE94BA003857F6 /* ControllView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ControllView.swift; sourceTree = "<group>"; };
 		18249D4A2AD0358C00A75E90 /* OrderPriceView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrderPriceView.swift; sourceTree = "<group>"; };
 		18249D4C2AD12CC800A75E90 /* TotalView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TotalView.swift; sourceTree = "<group>"; };
 		18249D4E2AD1452900A75E90 /* ButtonCheckoutView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonCheckoutView.swift; sourceTree = "<group>"; };
@@ -93,6 +96,7 @@
 		189702BA2ADE45F200F1C1E9 /* CustomerSellerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomerSellerView.swift; sourceTree = "<group>"; };
 		189702BC2ADE485300F1C1E9 /* InfoPaymentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InfoPaymentView.swift; sourceTree = "<group>"; };
 		189702BE2ADE51DA00F1C1E9 /* PaidView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaidView.swift; sourceTree = "<group>"; };
+		189702C22ADE7D1400F1C1E9 /* ShareButtonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShareButtonView.swift; sourceTree = "<group>"; };
 		18F79C1F2ACFB6DD009657A9 /* TextFieldView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextFieldView.swift; sourceTree = "<group>"; };
 		18F79C232ACFD821009657A9 /* AddPostcardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddPostcardView.swift; sourceTree = "<group>"; };
 		18F79C272ACFFABA009657A9 /* ButtonForNavigation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonForNavigation.swift; sourceTree = "<group>"; };
@@ -147,6 +151,7 @@
 				186BB1AD2ACE80D700533FB4 /* Checkout */,
 				186BB1982ACC14DB00533FB4 /* Onboarding */,
 				186BB18A2ACC0E1000533FB4 /* FlowerApp.swift */,
+				181955BA2ADE94BA003857F6 /* ControllView.swift */,
 				186BB18E2ACC0E1200533FB4 /* Assets.xcassets */,
 				186BB1902ACC0E1200533FB4 /* Preview Content */,
 			);
@@ -278,6 +283,7 @@
 				186BB1B62ACEABFF00533FB4 /* NavigationBarItemsButton.swift */,
 				18F79C272ACFFABA009657A9 /* ButtonForNavigation.swift */,
 				18249D4E2AD1452900A75E90 /* ButtonCheckoutView.swift */,
+				189702C22ADE7D1400F1C1E9 /* ShareButtonView.swift */,
 			);
 			path = Buttons;
 			sourceTree = "<group>";
@@ -370,6 +376,7 @@
 				186BB1AC2ACD57DB00533FB4 /* OnboardingView.swift in Sources */,
 				186BB1C12ACFB4E400533FB4 /* AdditionalInfoView.swift in Sources */,
 				186BB1AA2ACD3A6400533FB4 /* DotsIndexView.swift in Sources */,
+				189702C32ADE7D1400F1C1E9 /* ShareButtonView.swift in Sources */,
 				186BB1B92ACEB3A200533FB4 /* EntityType.swift in Sources */,
 				18249D4B2AD0358C00A75E90 /* OrderPriceView.swift in Sources */,
 				186BB1BD2ACECE7C00533FB4 /* AddressView.swift in Sources */,
@@ -389,6 +396,7 @@
 				18249D552AD5014C00A75E90 /* TextFieldForNumberView .swift in Sources */,
 				189702BB2ADE45F200F1C1E9 /* CustomerSellerView.swift in Sources */,
 				186BB1AF2ACE811900533FB4 /* CheckoutView.swift in Sources */,
+				181955BB2ADE94BA003857F6 /* ControllView.swift in Sources */,
 				189702BD2ADE485300F1C1E9 /* InfoPaymentView.swift in Sources */,
 				1897029D2ADCFF0E00F1C1E9 /* AddingAddressView.swift in Sources */,
 				189702A22ADD255E00F1C1E9 /* GeolocationView.swift in Sources */,
