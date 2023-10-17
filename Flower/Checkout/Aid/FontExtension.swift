@@ -95,4 +95,17 @@ extension Font{
     static var timeButtonTextFont: Font{
         return .custom(.interMedium, size: 16)
     }
+    
+    //MARK: CheckView
+    static var totalCheckFont: Font{
+        return .custom(.interBold, size: 32)
+    }
+    
+    static var textBoldFont: Font{
+        return .custom(.interBold, size: 16)
+    }
+    
+    static var textMediumFont: Font{
+        return .custom(.interMedium, size: 16)
+    }
 }

@@ -101,4 +101,48 @@ struct Aid{
         var title = "Введите адрес"
         var geolocation = "Поделиться геолокацией"
     }
+    
+    struct CheckViewText{
+        var title = "Чек"
+        var total = "15000.00"
+        
+    }
+    
+    struct PriceViewText{
+        var bouquets = "Букет цветом"
+        var delivery = "Доставка"
+        var total = "Итого"
+        
+        var priceBouquets = "14000"
+        var priceDelivery = "1000"
+        var priceTotal = "15000"
+    }
+    
+    struct CustomerSellerText{
+        var seller = "Продавец"
+        var customer = "Покупатель"
+        
+        var nameSeller = "ТОО Celine"
+        var idCustomer = "ID3432432"
+    }
+    
+    struct InfoPaymentText{
+        var address = "Адрес"
+        var timeOfBuy = "Время покупки"
+        var paymentMethods = "Способ оплаты"
+        
+        var valueAddress = "г.Алматы Розыбакиева ТЦР Мега"
+        var valueTimeOfBuy = "11.02.2023 16:32"
+        var valuePaymentMethods = "Jusan pay"
+    }
+    
+    struct PaidViewText{
+        var NDSPercent = "НДС"
+        var NDS = "НДС"
+        var status = "Оплачено"
+        
+        var valueNDSPercent = "12"
+        var valueNDS = "120"
+        var valueStatus = "Подтверждено"
+    }
 }

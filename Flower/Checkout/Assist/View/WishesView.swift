@@ -16,6 +16,7 @@ struct WishesView: View {
         VStack(spacing: 16){
             Text(Aid.WishesViewText().title)
                 .font(Font.titelsCheckoutFont)
+                .foregroundColor(Color(StringConstant.BackgroundColors.navigationTitleColor))
             
             MultiLineTF(text: $text)
                 .padding()
