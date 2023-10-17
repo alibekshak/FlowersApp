@@ -40,7 +40,8 @@ struct CheckoutView: View {
                             
                             TotalView()
                             
-                            BuyButtonView()
+                            ButtonCheckoutView(name: Aid.TextForBuyButton().buy, color: Color((StringConstant.BackgroundColors.darkButton)),
+                                          textColor: Color(StringConstant.BackgroundColors.buttonTitle))
                         }
                         
                     }

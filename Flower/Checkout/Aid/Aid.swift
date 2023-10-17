@@ -145,4 +145,8 @@ struct Aid{
         var valueNDS = "120"
         var valueStatus = "Подтверждено"
     }
+    
+    struct ButttonForCheckView{
+        var name = "Вернуться на главную"
+    }
 }

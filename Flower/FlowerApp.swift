@@ -5,7 +5,8 @@ struct FlowerApp: App {
     var body: some Scene {
         WindowGroup {
 //            OnboardingView()
-            CheckoutView()
+//            CheckoutView()
+            CheckView()
         }
     }
 }

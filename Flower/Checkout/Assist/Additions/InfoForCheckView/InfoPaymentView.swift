@@ -46,6 +46,7 @@ struct InfoPaymentView: View {
                     .foregroundColor(Color(StringConstant.BackgroundColors.generalTitles).opacity(0.6))
             }
         }
+        .padding([.bottom, .top], 24)
     }
 }
 

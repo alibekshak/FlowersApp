@@ -1,15 +1,12 @@
-//
-//  ButtonForSelectPostcards.swift
-//  Flower
-//
-//  Created by Apple on 10.10.2023.
-//
-
 import SwiftUI
 
-struct ButtonForSelectPostcards: View {
+struct ButtonCheckoutView: View {
     
     @Environment(\.presentationMode) private var presentationMode
+    
+    var name: String
+    var color: Color
+    var textColor: Color
     
     var body: some View {
         Button(action: {
@@ -18,23 +15,22 @@ struct ButtonForSelectPostcards: View {
             ZStack{
                 RoundedRectangle(cornerRadius: 78)
                     .frame(height: 56)
-                    .foregroundColor(Color(StringConstant.BackgroundColors.selectedColor))
+                    .foregroundColor(color)
                 
-                Text(Aid.TextSelectPostcards().button)
-                    .foregroundColor(Color(StringConstant.BackgroundColors.buttonTitle))
+                Text(name)
+                    .foregroundColor(textColor)
                     .font(Font.titelsCheckoutFont)
             }
         }
-        .padding(.horizontal)
-
     }
     private func dismiss() {
         presentationMode.wrappedValue.dismiss()
     }
 }
 
-struct ButtonForSelectPostcards_Previews: PreviewProvider {
+struct ButtonCheckoutView_Preview: PreviewProvider {
     static var previews: some View {
-        ButtonForSelectPostcards()
+        ButtonCheckoutView(name: Aid.TextForBuyButton().buy, color: Color((StringConstant.BackgroundColors.darkButton)),
+                      textColor: Color(StringConstant.BackgroundColors.buttonTitle))
     }
 }

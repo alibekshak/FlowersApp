@@ -22,7 +22,7 @@ struct WishesView: View {
                 .padding()
                 .background(RoundedRectangle(cornerRadius: 16).stroke(Color(StringConstant.BackgroundColors.additionalInfoColor), lineWidth: 1))
             
-            ButtonForWishesView()
+            ButtonCheckoutView(name: Aid.WishesViewText().buttonName, color: Color(StringConstant.BackgroundColors.selectedColor), textColor: Color(StringConstant.BackgroundColors.buttonTitle))
         }
         .padding()
     }

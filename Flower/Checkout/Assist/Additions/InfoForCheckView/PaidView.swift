@@ -37,6 +37,7 @@ struct PaidView: View {
                     .foregroundColor(Color(StringConstant.BackgroundColors.selectedColor))
             }
         }
+        .padding([.bottom, .top], 24)
     }
 }
 

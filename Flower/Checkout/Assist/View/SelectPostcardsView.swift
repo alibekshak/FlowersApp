@@ -76,7 +76,8 @@ struct SelectPostcardsView: View {
                     }
                 }
             }
-            ButtonForSelectPostcards()
+            ButtonCheckoutView(name: Aid.TextSelectPostcards().button, color: Color(StringConstant.BackgroundColors.selectedColor), textColor: Color(StringConstant.BackgroundColors.buttonTitle))
+                .padding([.horizontal, .top])
         }
     }
 }

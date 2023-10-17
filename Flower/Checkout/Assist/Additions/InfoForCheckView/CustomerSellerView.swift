@@ -26,6 +26,7 @@ struct CustomerSellerView: View {
             .font(Font.textMediumFont)
             .foregroundColor(Color(StringConstant.BackgroundColors.generalTitles).opacity(0.6))
         }
+        .padding([.top,.bottom], 24)
     }
 }
 

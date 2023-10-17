@@ -28,6 +28,7 @@ struct PriceView: View {
             .font(Font.textMediumFont)
             .foregroundColor(Color(StringConstant.BackgroundColors.generalTitles).opacity(0.6))
         }
+        .padding([.bottom, .top], 24)
     }
 }
 
